@@ -479,7 +479,7 @@ ul.sub-menu li:hover a span {
 <!-- Start Consen Slider Area Css -->
 <!-- ============================================================== -->*/
 .slider-area {
-  background: url(../images/slider/hero-bg.png);
+  background: url(../images/home/hero-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1079,12 +1079,12 @@ ul.sub-menu li:hover a span {
   transition: 0.5s;
 }
 
-.service-number h1 {
-  font-size: 55px;
+.service-number h4 {
+  font-size: 30px;
   opacity: 10%;
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: 10%;
+  left: 5%;
   margin: auto;
 }
 
@@ -3062,6 +3062,7 @@ p.choose-text1 {
   display: inline-block;
   transition: 0.5s;
   padding: 20px 0 0px;
+  height: 8rem;
 }
 
 .em-testi-start-icon i {
@@ -3778,7 +3779,7 @@ a.active {
 }
 
 .faq-sectiions {
-  background: url(../images/resource/faq-bg.jpg);
+  background: url(../images/home/faq-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

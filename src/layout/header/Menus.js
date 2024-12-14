@@ -1,17 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const DaskTopMenusMenus = () => {
   return (
     <ul className="nav_scroll">
-      {" "}
+      {' '}
       <li>
-        <a href="#">
-          Home{" "}
+        <Link href="/">
+          Home{' '}
           <span>
-            <i className="fas fa-angle-down" />
+            <i className="fas" />
           </span>
-        </a>
-        <ul className="sub-menu">
+        </Link>
+        {/* <ul className="sub-menu">
           {" "}
           <li>
             <Link legacyBehavior href="/">
@@ -33,121 +33,124 @@ export const DaskTopMenusMenus = () => {
               <a>Landing Page</a>
             </Link>
           </li>
-        </ul>
-      </li>{" "}
+        </ul> */}
+      </li>{' '}
       <li>
-        <a href="#">
-          Company{" "}
+        <Link legacyBehavior href="about">
+          About Us
+        </Link>
+        {/* <a href="#">
+          Company{' '}
           <span>
             <i className="fas fa-angle-down" />
           </span>
-        </a>
-        <ul className="sub-menu">
-          {" "}
+        </a> */}
+        {/* <ul className="sub-menu">
+          {' '}
           <li>
             <Link legacyBehavior href="about">
               About Us
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="service">
               Our Service
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="pricing">
               Pricing
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="team">
               Our Team
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="portfolio">
               Portfolio
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="portfolio-details">
               Portfolio Details
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="404">
               404
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="contact">
               Contact Us
             </Link>
           </li>
-        </ul>
-      </li>{" "}
+        </ul> */}
+      </li>{' '}
       <li>
-        <a href="#">
-          Services{" "}
+        <a href="service">
+          Services{' '}
           <span>
-            <i className="fas fa-angle-down" />
+            <i className="fas" />
           </span>
         </a>
-        <ul className="sub-menu">
-          {" "}
+        {/* <ul className="sub-menu">
+          {' '}
           <li>
             <Link legacyBehavior href="service">
               Our Service
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="service-details">
               Service Details
             </Link>
           </li>
-        </ul>
-      </li>{" "}
-      <li>
+        </ul> */}
+      </li>{' '}
+      {/* <li>
         <Link legacyBehavior href="portfolio">
           Portfolio
         </Link>
-      </li>{" "}
+      </li>{' '} */}
       <li>
-        <a href="#">
-          Blog{" "}
+        <Link href="blog-grid">
+          Blog{' '}
           <span>
-            <i className="fas fa-angle-down" />
+            <i className="fas" />
           </span>
-        </a>
-        <ul className="sub-menu">
-          {" "}
+        </Link>
+        {/* <ul className="sub-menu">
+          {' '}
           <li>
             <Link legacyBehavior href="blog-grid">
               Blog Gird
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="blog-list">
               Blog List
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="blog-2column">
               Blog-2Column
             </Link>
-          </li>{" "}
+          </li>{' '}
           <li>
             <Link legacyBehavior href="blog-details">
               Blog Details
             </Link>
           </li>
-        </ul>
-      </li>{" "}
-      <li>
+        </ul> */}
+      </li>{' '}
+      {/* <li>
         <Link legacyBehavior href="contact">
           Contact
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 };

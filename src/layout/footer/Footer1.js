@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Footer1 = () => {
   return (
     <div className="footer-middle">
       <div className="container">
         <div className="subscribe-area">
-          <div className="row ">
+          <div className="row">
             <div className="col-lg-6 col-md-6">
               <div className="subscribe-title">
                 <h1>Subscribe to our Newsletter</h1>
@@ -48,85 +48,83 @@ const Footer1 = () => {
         </div>
         <div className="footer-bg">
           <div className="row">
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-5 col-sm-6">
               <div className="widget widgets-company-info mb-4 mb-lg-0">
                 <div className="company-info-desc pr-2">
-                  <h4 className="widget-title"> About Us </h4>
+                  <h4 className="widget-title">About Us</h4>
                   <p>
-                    Busines Consulting is optimize standing manufactured
-                    products and installation synergy. Professionally predominat
-                    why professional business
+                    RAV Group is committed to total transparency with its
+                    clients, employees, and partners. We offer extra value with
+                    our services, ensuring your investment grows. Since 2012, we
+                    have helped over 10,000 investors with organic farming,
+                    outdoor dining, and more.
                   </p>
                 </div>
                 <div className="follow-company-icon">
                   <a className="social-icon-color" href="#">
-                    {" "}
-                    <i className="bi bi-facebook" />{" "}
+                    <i className="bi bi-facebook" />
                   </a>
                   <a className="social-icon-color2" href="#">
-                    {" "}
-                    <i className="bi bi-instagram"> </i>{" "}
+                    <i className="bi bi-instagram" />
                   </a>
                   <a className="social-icon-color1" href="#">
-                    {" "}
-                    <i className="bi bi-twitter" />{" "}
+                    <i className="bi bi-twitter" />
                   </a>
                   <a className="social-icon-color3" href="#">
-                    {" "}
-                    <i className="bi bi-youtube" />{" "}
+                    <i className="bi bi-youtube" />
                   </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 col-6">
-              <div className="widget widget-nav-menu">
-                <h4 className="widget-title">Company</h4>
-                <div className="menu-quick-link-content">
-                  <ul className="footer-menu">
-                    <li>
-                      <a href="#"> Home </a>
-                    </li>
-                    <li>
-                      <a href="#"> About U s</a>
-                    </li>
-                    <li>
-                      <a href="#"> Contact Us </a>
-                    </li>
-                    <li>
-                      <a href="#"> Service </a>
-                    </li>
-                    <li>
-                      <a href="#"> Our Team </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-6">
               <div className="widget widget-nav-menu">
-                <h4 className="widget-title"> Services </h4>
+                <h4 className="widget-title"></h4>
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <a href="#"> Strategy &amp; Planing </a>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="#"> Consumer Market </a>
+                      <a href="about">About Us</a>
                     </li>
                     <li>
-                      <a href="#"> Data Analysis </a>
+                      <a href="service">Services</a>
                     </li>
                     <li>
-                      <a href="#"> Corporate Finance </a>
+                      <a href="#">Blog</a>
                     </li>
                     <li>
-                      <a href="#"> Market Research </a>
+                      <a href="#">Contact Us</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6">
+            <div className="col-lg-4 col-6">
+              <div className="widget widget-nav-menu">
+                <h4 className="widget-title">Services</h4>
+                <div className="menu-quick-link-content">
+                  <ul className="footer-menu">
+                    <li>
+                      <a href="#">Business Consulting</a>
+                    </li>
+                    <li>
+                      <a href="#">Organic Farming</a>
+                    </li>
+                    <li>
+                      <a href="#">The River Castle</a>
+                    </li>
+                    {/* <li>
+                      <a href="#">Corporate Finance</a>
+                    </li>
+                    <li>
+                      <a href="#">Market Research</a>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-lg-3 col-sm-6">
               <div id="em-recent-post-widget" className="mt-5 mt-sm-0">
                 <div className="single-widget-item">
                   <h4 className="widget-title">Popular Posts</h4>
@@ -161,14 +159,14 @@ const Footer1 = () => {
                     </div>
                     <div className="recent-post-text">
                       <h6>
-                        <a href="#">Top 10 Most Usefull Google Extansion</a>
+                        <a href="#">Top 10 Most Useful Google Extensions</a>
                       </h6>
                       <span className="rcomment">Dec 15, 2023</span>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="foorer-shape">
             <div className="footer-thumb">
@@ -186,8 +184,8 @@ const Footer1 = () => {
             <div className="col-md-4">
               <div className="consen-logo">
                 <Link legacyBehavior href="/">
-                  <a className="logo_thumb" title="consen">
-                    <img src="assets/images/logo.png" alt="logo" />
+                  <a className="logo_thumb" title="RAV Group">
+                    <img src="assets/images/logo.png" alt="RAV Group Logo" />
                   </a>
                 </Link>
               </div>
@@ -196,8 +194,9 @@ const Footer1 = () => {
               <div className="footer-bottom-content">
                 <div className="footer-bottom-content-copy">
                   <p>
-                    © 2023 <span>Consen</span> all rights reserved. Design By
-                    Dream-IT.
+                    © 2024 <span>RAV Group</span> all rights reserved.
+                    {/* Design By
+                    Dream-IT. */}
                   </p>
                 </div>
               </div>
@@ -208,4 +207,5 @@ const Footer1 = () => {
     </div>
   );
 };
+
 export default Footer1;

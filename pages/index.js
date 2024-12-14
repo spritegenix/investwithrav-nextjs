@@ -1,9 +1,78 @@
-import Counter from "@/src/components/Counter";
-import ProssessBar from "@/src/components/ProssessBar";
-import Layout from "@/src/layout/Layout";
-import { brandListProps, caseStudyProps } from "@/src/sliderProps";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Counter from '@/src/components/Counter';
+import ProssessBar from '@/src/components/ProssessBar';
+import Layout from '@/src/layout/Layout';
+import { brandListProps, caseStudyProps } from '@/src/sliderProps';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+const sponsors = [
+  {
+    id: 1,
+    image: 'assets/images/home/sponsors/01.png',
+  },
+  {
+    id: 2,
+    image: 'assets/images/home/sponsors/02.png',
+  },
+  {
+    id: 3,
+    image: 'assets/images/home/sponsors/03.png',
+  },
+  {
+    id: 4,
+    image: 'assets/images/home/sponsors/04.png',
+  },
+  {
+    id: 5,
+    image: 'assets/images/home/sponsors/05.png',
+  },
+];
+
+const articles = [
+  {
+    id: 1,
+    title: '5 THINGS THAT TAKE A ROOM FROM GOOD TO GREAT',
+    href: '/5-things-that-take-a-room-from-good-to-great',
+  },
+  {
+    id: 2,
+    title: 'FUNCTIONAL AND STYLISH WALL-TO-WALL SHELVES',
+    href: '/functional-and-stylish-wall-to-wall-shelves',
+  },
+  {
+    id: 3,
+    title: 'THE 5 SECRETS TO PULLING OFF SIMPLE, MINIMAL DESIGN',
+    href: '/the-5-secrets-to-pulling-off-simple-minimal-design',
+  },
+];
+
+export const servicesData = [
+  {
+    title: 'Business Consulting',
+    sub: 'Plots',
+    description:
+      'We offer plots in Green City, Awadh, and Highway County. You will own...',
+    image: 'assets/images/resource/consultation.png',
+    link: 'services/business-consulting',
+  },
+  {
+    title: 'Organic Farming',
+    sub: 'Farming',
+    description:
+      'We offer you a unique opportunity to own your irrigated farmland, an...',
+    image: 'assets/images/resource/organic-food.png',
+    link: 'services/organic-farming',
+  },
+  {
+    title: 'River Castle',
+    sub: 'Castle',
+    description:
+      'THE RIVER CASTLE is not just another high-end real estate project...',
+    image: 'assets/images/resource/castle.png',
+    link: 'services/river-castle',
+  },
+];
+
 const Index = () => {
   return (
     <Layout footer={1}>
@@ -15,16 +84,15 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6">
               <div className="slider-content">
-                <h3> Work With Consen </h3>
-                <h1> Innovate Solution For </h1>
+                <h3>Invest with RAV </h3>
                 <h1>
-                  {" "}
-                  Business <span>Success</span>{" "}
+                  Invest with <span>confidence</span> and <span>vision</span>.
                 </h1>
                 <p>
-                  {" "}
-                  Monotonectally implement integrated commerce and distributed
-                  is conveniently unleash B2B customer service via long
+                  {' '}
+                  Unlock the door to exceptional real estate opportunities,
+                  where luxury meets innovation. Join us in shaping tomorrow's
+                  landmarks today.
                 </p>
               </div>
               <div className="lines pt-20 pb-40">
@@ -34,8 +102,8 @@ const Index = () => {
                 <div className="slider-button">
                   <Link legacyBehavior href="/service">
                     <a>
-                      {" "}
-                      Work Together <i className="bi bi-plus" />{" "}
+                      {' '}
+                      Explore Opportunities <i className="bi bi-plus" />{' '}
                     </a>
                   </Link>
                 </div>
@@ -44,9 +112,10 @@ const Index = () => {
                     <img src="assets/images/slider/call.png" alt="call icon" />
                   </a>
                   <div className="contact-number">
-                    <span> Call Everyday </span>
+                    <span> Reach Out Today </span>
                     <h3>
-                      <a href="tel:+983217690326">+98 321 (7690) 326</a>{" "}
+                      <a href="tel:+918800933935">+91 8800933935</a> <br />
+                      <a href="tel:+917503500871">+91 7503500871</a>{' '}
                     </h3>
                   </div>
                 </div>
@@ -54,7 +123,7 @@ const Index = () => {
             </div>
             <div className="col-lg-5 col-md-6 ">
               <div className="slider-thumb">
-                <img src="assets/images/slider/hero-img.png" alt />
+                <img src="assets/images/home/hero-img.png" alt />
               </div>
               <div className="video-icon">
                 <a
@@ -90,10 +159,9 @@ const Index = () => {
           <div className="row align-items-center mb-90">
             <div className="col-lg-7 col-md-8 pl-0">
               <div className="consen-section-title mobile-center">
-                <h2> We Run All Kinds Of Services</h2>
                 <h2>
-                  {" "}
-                  From <span> Technologies </span>
+                  Discover organic farming, <br /> nature-inspired dining, and
+                  plots crafted just for you.
                 </h2>
               </div>
             </div>
@@ -101,134 +169,41 @@ const Index = () => {
               <div className="consen-button text-right">
                 <Link legacyBehavior href="/service">
                   <a>
-                    {" "}
-                    All Service <i className="bi bi-plus" />{" "}
+                    All Service <i className="bi bi-plus" />
                   </a>
                 </Link>
               </div>
             </div>
           </div>
+
           <div className="row">
-            <div className="col-lg-3 col-sm-6 p-0">
-              <div className="dreamit-service-box">
-                <div className="service-box-inner">
-                  <div className="em-service-icon">
-                    <img src="assets/images/resource/service-icon.png" alt />
-                  </div>
-                  <div className="em-service-title">
-                    <h2> Interacture Capacity Planning </h2>
-                  </div>
-                  <div className="service-number">
-                    <h1> 01 </h1>
-                  </div>
-                  <div className="em-service-text">
-                    <p>
-                      {" "}
-                      Dramatically cultivate from quality user centric growth
-                      strateges emerging{" "}
-                    </p>
-                  </div>
-                  <div className="service-button">
-                    <Link legacyBehavior href="/service-details">
-                      <a>
-                        {" "}
-                        Read More <i className="bi bi-plus" />{" "}
-                      </a>
-                    </Link>
+            {servicesData.map((service, index) => (
+              <div key={index} className="col-lg-4 col-sm-6 p-0">
+                <div className="dreamit-service-box">
+                  <div className="service-box-inner">
+                    <div className="em-service-icon">
+                      <img src={service.image} alt={service.title} />
+                    </div>
+                    <div className="em-service-title">
+                      <h2>{service.title}</h2>
+                    </div>
+                    <div className="service-number">
+                      <h4>{service.sub}</h4>
+                    </div>
+                    <div className="em-service-text">
+                      <p>{service.description}</p>
+                    </div>
+                    <div className="service-button">
+                      <Link legacyBehavior href={service.link}>
+                        <a>
+                          Read More <i className="bi bi-plus" />
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 p-0">
-              <div className="dreamit-service-box">
-                <div className="service-box-inner">
-                  <div className="em-service-icon">
-                    <img src="assets/images/resource/service-icon2.png" alt />
-                  </div>
-                  <div className="em-service-title">
-                    <h2> New Technology Services </h2>
-                  </div>
-                  <div className="service-number">
-                    <h1> 02 </h1>
-                  </div>
-                  <div className="em-service-text">
-                    <p>
-                      {" "}
-                      Dramatically cultivate from quality user centric growth
-                      strateges emerging{" "}
-                    </p>
-                  </div>
-                  <div className="service-button">
-                    <Link legacyBehavior href="/service-details">
-                      <a>
-                        {" "}
-                        Read More <i className="bi bi-plus" />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 p-0">
-              <div className="dreamit-service-box">
-                <div className="service-box-inner">
-                  <div className="em-service-icon">
-                    <img src="assets/images/resource/service-icon3.png" alt />
-                  </div>
-                  <div className="em-service-title">
-                    <h2> Cloud Computing Solutions </h2>
-                  </div>
-                  <div className="service-number">
-                    <h1> 03 </h1>
-                  </div>
-                  <div className="em-service-text">
-                    <p>
-                      {" "}
-                      Dramatically cultivate from quality user centric growth
-                      strateges emerging{" "}
-                    </p>
-                  </div>
-                  <div className="service-button">
-                    <Link legacyBehavior href="/service-details">
-                      <a>
-                        {" "}
-                        Read More <i className="bi bi-plus" />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 p-0">
-              <div className="dreamit-service-box">
-                <div className="service-box-inner">
-                  <div className="em-service-icon">
-                    <img src="assets/images/resource/service-icon.png" alt />
-                  </div>
-                  <div className="em-service-title">
-                    <h2> Top Information Technology </h2>
-                  </div>
-                  <div className="service-number">
-                    <h1> 04 </h1>
-                  </div>
-                  <div className="em-service-text">
-                    <p>
-                      {" "}
-                      Dramatically cultivate from quality user centric growth
-                      strateges emerging{" "}
-                    </p>
-                  </div>
-                  <div className="service-button">
-                    <Link legacyBehavior href="/service-details">
-                      <a>
-                        {" "}
-                        Read More <i className="bi bi-plus" />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -243,81 +218,87 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="dreamit-about-thumb">
-                <img src="assets/images/about/about.png" alt />
-                {/* about-shape */}
+                <img
+                  className="home-about-img"
+                  src="assets/images/home/about-meeting.webp"
+                  alt="About Us"
+                />
                 <div className="about-shape-thumb1 bounce-animate2">
-                  <img src="assets/images/about/about-shape2.png" alt />
+                  <img src="assets/images/about/about-shape2.png" alt="Shape" />
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 ">
+            <div className="col-lg-6 col-md-12">
               <div className="consen-section-title white pb-10">
-                <h2> The Fatest Way To Achieve</h2>
+                <h2>Your Journey to Unmatched</h2>
                 <h2>
-                  {" "}
-                  Your Business <span> Success </span>
+                  Business <span>Success</span> Begins Here
                 </h2>
                 <p>
-                  Continually generate 2.0 communities and client-focused
-                  products. In synergize strategic manufactured products whereas
-                  levera.
+                  For over a decade, we’ve been crafting stories of trust,
+                  innovation, and excellence. From humble beginnings to
+                  groundbreaking milestones, our journey reflects our commitment
+                  to building a brighter future for every client we serve.
                 </p>
               </div>
               <div className="lines style-two pb-15">
-                <div className="line" />
+                <div className="line"></div>
               </div>
               <div className="dreamit-icon-title">
                 <h4>
-                  {" "}
-                  We are Since <span>2007 to Present</span> in Sandigo, USA{" "}
+                  Empowering Dreams <span>Since 2007</span>
                 </h4>
               </div>
               <div className="dreamit-icon-list">
                 <ul>
                   <li>
-                    <i className="flaticon-tick" />{" "}
-                    <span> Credibly reinvent sticky partnerships done </span>
-                  </li>
-                  <li>
-                    <i className="flaticon-tick" />{" "}
+                    <i className="flaticon-tick"></i>{' '}
                     <span>
-                      {" "}
-                      Distinctively evisculate data superior content.
+                      Creating meaningful partnerships with lasting value
                     </span>
                   </li>
                   <li>
-                    <i className="flaticon-tick" />{" "}
-                    <span> Monotonectally foster open source </span>
+                    <i className="flaticon-tick"></i>{' '}
+                    <span>
+                      Delivering exceptional solutions tailored to your needs
+                    </span>
+                  </li>
+                  <li>
+                    <i className="flaticon-tick"></i>{' '}
+                    <span>
+                      Fostering innovation through expertise and passion
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="about-button">
                 <Link legacyBehavior href="/about">
                   <a>
-                    {" "}
-                    Learn More <i className="bi bi-plus" />{" "}
+                    Learn More <i className="bi bi-plus"></i>
                   </a>
                 </Link>
               </div>
             </div>
-            {/* about thumb */}
             <div className="about-shape-thumb2 bounce-animate4">
-              <img src="assets/images/resource/all-shape.png" alt />
+              <img
+                src="assets/images/resource/all-shape.png"
+                alt="Decorative Shape"
+              />
             </div>
           </div>
           <div className="row counter-vip">
             <div className="col-lg-12">
               <div className="couter-top-title">
-                <h3> Consen Finished this Achivement in 7 Years </h3>
+                <h3>Celebrating Our Achievements Over the Years</h3>
               </div>
             </div>
             <div className="col-md-3 col-6">
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={1372} />
+                    <Counter end={17243} />
                   </h4>
-                  <p>Project Complete</p>
+                  <p>Happy Clients</p>
                 </div>
               </div>
             </div>
@@ -325,10 +306,10 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={23} />
+                    <Counter end={11} />
                   </h4>
                   <span>+</span>
-                  <p>Years Experience</p>
+                  <p>Years of Experience</p>
                 </div>
               </div>
             </div>
@@ -339,7 +320,7 @@ const Index = () => {
                     <Counter end={38} />
                   </h4>
                   <span>+</span>
-                  <p>Exper Member</p>
+                  <p>Expert Team Members</p>
                 </div>
               </div>
             </div>
@@ -347,16 +328,17 @@ const Index = () => {
               <div className="counter-single-box">
                 <div className="counter-title">
                   <h4>
-                    <Counter end={1372} />
+                    <Counter end={98} />
                   </h4>
-                  <span>+</span>
-                  <p>Satisfactions Rate</p>
+                  <span>%</span>
+                  <p>Satisfaction Rate</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/*==================================================*/}
       {/* End consen about Area */}
       {/*==================================================*/}
@@ -366,55 +348,63 @@ const Index = () => {
       <div className="ceo-cod-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12 ">
+            <div className="col-lg-6 col-md-12">
               <div className="consen-section-title">
-                <h2> What Say Our CEO, About</h2>
-                <h2>
-                  {" "}
-                  Consen <span> Customers </span>
-                </h2>
+                <h2> About Us </h2>
+                {/* <h2>
+                  {' '}
+                  Us <span> Our Story </span>
+                </h2> */}
                 <div className="lines style-three pt-20 pb-10">
                   <div className="line" />
                 </div>
                 <p className="about-text">
-                  {" "}
-                  “We help Our Clients to Renew Their Business Function to
-                  Create Brandable Organizations”{" "}
+                  {' '}
+                  “At Invest with RAV, we believe in creating opportunities that
+                  transform lives. Our journey began with a simple mission: to
+                  redefine the real estate experience by making it not just
+                  profitable but deeply meaningful for our clients.”{' '}
                 </p>
                 <p className="about-text2">
-                  Appropriately enhance principle-centered innovation rather
-                  than high standards in platforms. Credibly orchestrate
-                  functional markets through multidisciplinary services.
-                  Uniquely strategize transparent technology and user friendly
-                  ideas markets.{" "}
+                  Over the years, we have grown into more than just a real
+                  estate company. We are a community, a family dedicated to
+                  helping you achieve your dreams. From crafting luxurious
+                  living spaces to developing innovative lifestyle solutions,
+                  every step we take is driven by passion, trust, and a
+                  commitment to excellence. Together, we build more than
+                  properties—we build lasting relationships.
                 </p>
               </div>
-              <div className="dreamit-ceo-title">
+              {/* <div className="dreamit-ceo-title">
                 <h4> Philip Antrophy </h4>
-                <span>SEO &amp; Founder</span>
-              </div>
+                <span>CEO &amp; Founder</span>
+              </div> */}
               <div className="about-button">
-                <Link legacyBehavior href="/testimonial">
+                <Link legacyBehavior href="/about ">
                   <a>
-                    {" "}
-                    Clients Review <i className="bi bi-plus" />{" "}
+                    {' '}
+                    Know More <i className="bi bi-plus" />{' '}
                   </a>
                 </Link>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="dreamit-about-thumb1">
-                <img src="assets/images/about/about2.png" alt />
+                <img src="assets/images/home/ravres.webp" alt="About Us" />
               </div>
               <div className="about-shape-box">
                 <div className="about-shape-thumb bounce-animate">
-                  <img src="assets/images/about/ab-shape.png" alt />
+                  <img
+                    src="assets/images/about/ab-shape.png"
+                    alt="Decorative Shape"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/*==================================================*/}
       {/* End consen about Area */}
       {/*==================================================*/}
@@ -428,7 +418,7 @@ const Index = () => {
               <div className="consen-section-title mobile-center white ">
                 <h2> We Serve the Best Works</h2>
                 <h2>
-                  {" "}
+                  {' '}
                   View <span> Case Studies </span>
                 </h2>
               </div>
@@ -437,8 +427,8 @@ const Index = () => {
               <div className="consen-button text-right">
                 <Link legacyBehavior href="/portfolio">
                   <a>
-                    {" "}
-                    All Project <i className="bi bi-plus" />{" "}
+                    {' '}
+                    All Project <i className="bi bi-plus" />{' '}
                   </a>
                 </Link>
               </div>
@@ -462,7 +452,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Consulting for Business Organizations</a>
                           </Link>
@@ -471,7 +461,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -497,7 +487,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Strategy and Planning Building Idea</a>
                           </Link>
@@ -506,7 +496,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -532,7 +522,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Corporate Finance for helpfulness Markets</a>
                           </Link>
@@ -541,7 +531,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -567,7 +557,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Consulting for Business Organizations</a>
                           </Link>
@@ -576,7 +566,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -602,7 +592,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Strategy and Planning Building Idea</a>
                           </Link>
@@ -611,7 +601,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -637,7 +627,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a> Consulting for Business Organizations</a>
                           </Link>
@@ -646,7 +636,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -672,7 +662,7 @@ const Index = () => {
                       <div className="case-study-title">
                         <h6> Consulting </h6>
                         <h3>
-                          {" "}
+                          {' '}
                           <Link legacyBehavior href="/portfolio-details">
                             <a>Strategy and Planning Building Idea</a>
                           </Link>
@@ -681,7 +671,7 @@ const Index = () => {
                       <div className="case-button">
                         <Link legacyBehavior href="/portfolio-details">
                           <a>
-                            Read More <i className="bi bi-plus" />{" "}
+                            Read More <i className="bi bi-plus" />{' '}
                           </a>
                         </Link>
                       </div>
@@ -721,9 +711,12 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        Idea <span> Generate </span>
+                        Gathering <span> Information </span>
                       </h3>
-                      <p>Appropriately enhance data centered innovation</p>
+                      <p>
+                        Understanding your needs helps us grow together,
+                        ensuring mutual success.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -734,10 +727,12 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        {" "}
-                        System <span> Design </span>
+                        Professional <span> Advisors </span>
                       </h3>
-                      <p>Appropriately enhance data centered innovation</p>
+                      <p>
+                        Expert guidance to navigate your challenges and uncover
+                        opportunities.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -748,10 +743,12 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        {" "}
-                        24/7 <span> Support </span>
+                        Analyze <span> Your Business </span>
                       </h3>
-                      <p>Appropriately enhance data centered innovation</p>
+                      <p>
+                        Transform challenges into actionable strategies for
+                        meaningful growth.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -762,10 +759,12 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        {" "}
-                        Sales <span> Generate </span>
+                        Achieve <span> Excellence </span>
                       </h3>
-                      <p>Appropriately enhance data centered innovation</p>
+                      <p>
+                        Delivering transparent, value-driven results that exceed
+                        expectations.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -781,10 +780,9 @@ const Index = () => {
             </div>
             <div className="col-lg-6 col-md-12 pl-lg-50">
               <div className="consen-section-title mt-4 mt-lg-0">
-                <h2> The Fatest Way To Achieve </h2>
                 <h2>
-                  {" "}
-                  Technology <span> Consulting </span>
+                  Let's Turn Your <span>Dreams</span> Into Reality – Together,
+                  We’ll Build a <span>Future</span> That Matters
                 </h2>
               </div>
               <div className="lines style-three pt-30 pb-10">
@@ -792,23 +790,21 @@ const Index = () => {
               </div>
               <div className="dreamit-smart-title">
                 <h4>
-                  {" "}
-                  For Choose <span>Consen</span> Before know who we are?{" "}
+                  Why Choose <span> RAV Group </span>?
                 </h4>
                 <p>
-                  Monotonectally brand worldwide value before in seamless
-                  process data Collaboratively initiate strategic expertise
-                  after functionalized models in. Synergistically synthesize
-                  front-end convergence whereas resource tosynergy.
-                  Collaboratively the expedite focused architectures rather than
-                  resources. Enthusiastically extensive.
+                  At RAV Group, we don’t just see challenges; we see
+                  opportunities to create something extraordinary. We are driven
+                  by a passion to deliver not just results, but meaningful
+                  impact. With complete transparency and a commitment to
+                  delivering unmatched value, we partner with you to turn your
+                  vision into reality.
                 </p>
               </div>
               <div className="about-button">
                 <Link legacyBehavior href="/about">
                   <a>
-                    {" "}
-                    More About <i className="bi bi-plus" />{" "}
+                    More About <i className="bi bi-plus" />
                   </a>
                 </Link>
               </div>
@@ -817,72 +813,29 @@ const Index = () => {
           <div className="row pt-50">
             <div className="col-lg-12">
               <div className="dreamits-top-title">
-                <h3> More Then 5K+ Brands with work Consen</h3>
+                <h3> Exploring New Horizons with Our Ventures </h3>
               </div>
             </div>
           </div>
-          <div className="row pt-30">
+          <div className="row pt-30 ">
             <Swiper {...brandListProps} className="brand-list owl-carousel">
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/allian.png" alt />
+              {sponsors.map((item) => (
+                <SwiperSlide
+                  key={item.id}
+                  className="justify-content-center d-flex"
+                >
+                  <div className="brand-single-box">
+                    <div className="brand-thumb brands_logo">
+                      <img src={item.image} alt={item.id} />
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/figma.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/google.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/redit.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/allian.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/figma.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/google.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-single-box">
-                  <div className="brand-thumb">
-                    <img src="assets/images/resource/redit.png" alt />
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
       </div>
+
       {/*==================================================*/}
       {/* End consen process Area */}
       {/*==================================================*/}
@@ -895,10 +848,9 @@ const Index = () => {
             <div className="col-md-6">
               <div className="extra-animation-div">
                 <div className="consen-section-title white">
-                  <h2> Join the Community to learn </h2>
+                  <h2> Be Part of a Legacy </h2>
                   <h2>
-                    {" "}
-                    About our <span>Company</span>
+                    That Builds <span>Dreams</span>
                   </h2>
                 </div>
                 <div className="lines style-three upper pt-30 pb-10">
@@ -906,9 +858,11 @@ const Index = () => {
                 </div>
                 <div className="dreamit-smart-title">
                   <p className="slill-text">
-                    Continually generate 2.0 communities and client-focused
-                    products. In synergize strategic manufactured products
-                    whereas levera.
+                    We believe in creating more than just homes or
+                    investments—we create spaces where stories begin,
+                    aspirations grow, and communities thrive. Our journey has
+                    been one of passion, perseverance, and purpose, connecting
+                    hearts and building a future shaped by trust.
                   </p>
                 </div>
               </div>
@@ -916,27 +870,37 @@ const Index = () => {
             </div>
             <div className="col-md-6">
               <div className="slill-single-thumb mt-4 mt-lg-0 pl-50 ml-1">
-                <img src="assets/images/resource/skill.png" alt />
+                <img
+                  src="assets/images/resource/skill.png"
+                  alt="Our Experience"
+                />
                 {/* thumb content */}
                 <div className="skill-thumb-content">
                   <div className="skill-title">
                     <h3 className="counter"> 17 </h3>
                     <span>+</span>
-                    <h5> YEARS EXPERIENCE </h5>
+                    <h5> YEARS OF EXPERIENCE </h5>
                   </div>
                 </div>
                 {/* skill shape */}
                 <div className="skill-shape dance">
-                  <img src="assets/images/resource/skill-shape.png" alt />
+                  <img
+                    src="assets/images/resource/skill-shape.png"
+                    alt="Decorative Shape"
+                  />
                 </div>
                 <div className="skill-shape1 bounce-animate2">
-                  <img src="assets/images/resource/all-shape.png" alt />
+                  <img
+                    src="assets/images/resource/all-shape.png"
+                    alt="Dynamic Shape"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/*==================================================*/}
       {/* End consen Skill Area Css */}
       {/*==================================================*/}
@@ -948,27 +912,71 @@ const Index = () => {
           <div className="row align-items-center mb-40">
             <div className="col-lg-7 col-md-8">
               <div className="consen-section-title mobile-center">
-                <h2> We’re here to share story </h2>
                 <h2>
-                  {" "}
-                  from Latest <span> News </span>
+                  {' '}
+                  <span> Latest Blog Highlights:</span> Design Tips, Functional
+                  Spaces, and More{' '}
                 </h2>
+                {/* <h2>
+                  {' '}
+                  from Latest <span> News </span>
+                </h2> */}
               </div>
             </div>
             <div className="col-lg-5 col-md-4">
               <div className="consen-button text-right">
                 <Link legacyBehavior href="/blog-grid">
                   <a>
-                    {" "}
-                    View all Blog <i className="bi bi-plus" />{" "}
+                    {' '}
+                    View all Blog <i className="bi bi-plus" />{' '}
                   </a>
                 </Link>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-blog-box">
+            {articles.map((item) => (
+              <div className="col-lg-4 col-md-6">
+                <div className="single-blog-box">
+                  <div className="single-blog-thumb">
+                    <img src="assets/images/resource/blog1.png" alt />
+                    {/* <div className="blog-top-button">
+                      <a href={item.href}> {item.title} </a>
+                    </div> */}
+                  </div>
+                  <div className="em-blog-content">
+                    <div className="meta-blog-text">
+                      <p> August 25, 2023 </p>
+                    </div>
+                    <div className="em-blog-title">
+                      <h2>
+                        {' '}
+                        <Link legacyBehavior href="/blog-details">
+                          <a> {item.title.substring(0, 40) + '...'} </a>
+                        </Link>{' '}
+                      </h2>
+                    </div>
+                    <div className="em-blog-icon">
+                      <div className="em-blog-thumb">
+                        <img src="assets/images/resource/blog-icon.png" alt />
+                      </div>
+                      {/* <div className="em-blog-icon-title">
+                        <h6> Alex Collins </h6>
+                      </div> */}
+                    </div>
+                    <div className="blog-button">
+                      <Link legacyBehavior href={item.href}>
+                        <a>
+                          {' '}
+                          Learn More <i className="bi bi-plus" />{' '}
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {/* <div className="single-blog-box">
                 <div className="single-blog-thumb">
                   <img src="assets/images/resource/blog1.png" alt />
                   <div className="blog-top-button">
@@ -981,10 +989,10 @@ const Index = () => {
                   </div>
                   <div className="em-blog-title">
                     <h2>
-                      {" "}
+                      {' '}
                       <Link legacyBehavior href="/blog-details">
                         <a> Popular Consultants are big Meetup 2023 </a>
-                      </Link>{" "}
+                      </Link>{' '}
                     </h2>
                   </div>
                   <div className="em-blog-icon">
@@ -998,15 +1006,15 @@ const Index = () => {
                   <div className="blog-button">
                     <Link legacyBehavior href="/blog-details">
                       <a>
-                        {" "}
-                        Learn More <i className="bi bi-plus" />{" "}
+                        {' '}
+                        Learn More <i className="bi bi-plus" />{' '}
                       </a>
                     </Link>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
+              </div> */}
+
+            {/* <div className="col-lg-4 col-md-6">
               <div className="single-blog-box">
                 <div className="single-blog-thumb">
                   <img src="assets/images/resource/blog2.png" alt />
@@ -1020,10 +1028,10 @@ const Index = () => {
                   </div>
                   <div className="em-blog-title">
                     <h2>
-                      {" "}
+                      {' '}
                       <Link legacyBehavior href="/blog-details">
                         <a> How to Increase Business Products Sales </a>
-                      </Link>{" "}
+                      </Link>{' '}
                     </h2>
                   </div>
                   <div className="em-blog-icon">
@@ -1037,8 +1045,8 @@ const Index = () => {
                   <div className="blog-button">
                     <Link legacyBehavior href="/blog-details">
                       <a>
-                        {" "}
-                        Learn More <i className="bi bi-plus" />{" "}
+                        {' '}
+                        Learn More <i className="bi bi-plus" />{' '}
                       </a>
                     </Link>
                   </div>
@@ -1059,7 +1067,7 @@ const Index = () => {
                   </div>
                   <div className="em-blog-title">
                     <h2>
-                      {" "}
+                      {' '}
                       <Link legacyBehavior href="/blog-details">
                         <a> Top 10 Most Populars Google Chrome app</a>
                       </Link>
@@ -1076,14 +1084,14 @@ const Index = () => {
                   <div className="blog-button">
                     <Link legacyBehavior href="/blog-details">
                       <a>
-                        {" "}
-                        Learn More <i className="bi bi-plus" />{" "}
+                        {' '}
+                        Learn More <i className="bi bi-plus" />{' '}
                       </a>
                     </Link>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -58,3 +58,20 @@ li.monthdate.current_date {
   align-items: center;
   justify-content: space-around;
 }
+
+
+.home-about-img{
+border-radius: 3rem !important;
+}
+
+.brands_logo{
+  width: 141px;
+  height: 80px;
+  
+}
+
+.brands_logo img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

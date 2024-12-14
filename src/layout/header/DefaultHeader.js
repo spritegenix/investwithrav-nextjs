@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { DaskTopMenusMenus } from "./Menus";
+import Link from 'next/link';
+import { DaskTopMenusMenus } from './Menus';
 
 const DefaultHeader = () => {
   return (
@@ -10,12 +10,12 @@ const DefaultHeader = () => {
             <div className="logo">
               <Link legacyBehavior href="/">
                 <a className="logo_img" title="consen">
-                  <img src="assets/images/logo.png" alt="logo" />
+                  <img src="../assets/images/logo.png" alt="logo" />
                 </a>
               </Link>
               <Link legacyBehavior href="/">
                 <a className="main_sticky" title="consen">
-                  <img src="assets/images/logo.png" alt="logo" />
+                  <img src="../assets/images/logo.png" alt="logo" />
                 </a>
               </Link>
             </div>
@@ -25,7 +25,7 @@ const DefaultHeader = () => {
               <DaskTopMenusMenus />
               <div className="header-button">
                 <Link legacyBehavior href="/contact">
-                  <a>Schedule Consultation</a>
+                  <a>Contact Us</a>
                 </Link>
               </div>
             </nav>
