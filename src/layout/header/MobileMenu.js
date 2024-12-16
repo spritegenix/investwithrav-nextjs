@@ -1,32 +1,35 @@
-import Link from "next/link";
-import { Fragment, useState } from "react";
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
 
 const MobileMenu = () => {
   const [toggle, setToggle] = useState(false);
-  const [activeMenu, setActiveMenu] = useState("");
-  const [subMenus, setSubMenus] = useState("");
+  const [activeMenu, setActiveMenu] = useState('');
+  const [subMenus, setSubMenus] = useState('');
   const activeMenuSet = (value) =>
-      setActiveMenu(activeMenu === value ? "" : value),
-    activeBtn = (value) => (value === activeMenu ? "-" : "+"),
+      setActiveMenu(activeMenu === value ? '' : value),
+    activeBtn = (value) => (value === activeMenu ? '-' : '+'),
     activeLi = (value) =>
-      value === activeMenu ? { display: "block" } : { display: "none" },
+      value === activeMenu ? { display: 'block' } : { display: 'none' },
     setSub = (value, motherMenu) =>
       motherMenu === activeMenu && value == subMenus
-        ? setSubMenus("")
+        ? setSubMenus('')
         : setSubMenus(value),
     activeSub = (value) =>
-      value === subMenus ? { display: "block" } : { display: "none" };
+      value === subMenus ? { display: 'block' } : { display: 'none' };
   return (
     <div className="mobile-menu-area d-sm-block d-md-block d-lg-none header____">
       <div className="mobile-menu mean-container">
         <div className="mean-bar">
+          <div className="my-auto position-absolute pt-2 pl-2">
+            <img src="../assets/images/home/logo2.png" alt="" />
+          </div>
           <a
             href="#nav"
-            className={`meanmenu-reveal ${toggle ? "meanclose" : ""}`}
+            className={`meanmenu-reveal ${toggle ? 'meanclose' : ''}`}
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
-              "X"
+              'X'
             ) : (
               <Fragment>
                 <span /> <span /> <span />
@@ -36,11 +39,11 @@ const MobileMenu = () => {
           <nav className="mean-nav">
             <ul
               className="nav_scroll"
-              style={{ display: toggle ? "block" : "none" }}
+              style={{ display: toggle ? 'block' : 'none' }}
             >
               <li>
-                <a href="#">Home </a>
-                <ul className="sub-menu" style={activeLi("Home")}>
+                <a href="/">Home </a>
+                {/* <ul className="sub-menu" style={activeLi("Home")}>
                   <li>
                     <Link legacyBehavior href="/">
                       IT Consulting
@@ -61,19 +64,21 @@ const MobileMenu = () => {
                       <a>Landing Page</a>
                     </Link>
                   </li>
-                </ul>
-                <a
+                </ul> */}
+                {/* <a
                   className="mean-expand"
                   href="#"
-                  onClick={() => activeMenuSet("Home")}
+                  onClick={() => activeMenuSet('Home')}
                   style={{ fontSize: 18 }}
                 >
-                  {activeBtn("Home")}
-                </a>
+                  {activeBtn('Home')}
+                </a> */}
               </li>
               <li>
-                <a href="#">Company </a>
-                <ul className="sub-menu" style={activeLi("Company")}>
+                <Link legacyBehavior href="about">
+                  About Us
+                </Link>
+                {/* <ul className="sub-menu" style={activeLi('Company')}>
                   <li>
                     <Link legacyBehavior href="about">
                       About Us
@@ -118,15 +123,17 @@ const MobileMenu = () => {
                 <a
                   className="mean-expand"
                   href="#"
-                  onClick={() => activeMenuSet("Company")}
+                  onClick={() => activeMenuSet('Company')}
                   style={{ fontSize: 18 }}
                 >
-                  {activeBtn("Company")}
-                </a>
+                  {activeBtn('Company')}
+                </a> */}
               </li>
               <li>
-                <a href="#">Services </a>
-                <ul className="sub-menu" style={activeLi("Services")}>
+                <Link legacyBehavior href="service">
+                  Our Service
+                </Link>
+                {/* <ul className="sub-menu" style={activeLi('Services')}>
                   <li>
                     <Link legacyBehavior href="service">
                       Our Service
@@ -141,20 +148,22 @@ const MobileMenu = () => {
                 <a
                   className="mean-expand"
                   href="#"
-                  onClick={() => activeMenuSet("Services")}
+                  onClick={() => activeMenuSet('Services')}
                   style={{ fontSize: 18 }}
                 >
-                  {activeBtn("Services")}
-                </a>
+                  {activeBtn('Services')}
+                </a> */}
               </li>
-              <li>
+              {/* <li>
                 <Link legacyBehavior href="portfolio">
                   Portfolio
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <a href="#">Blog </a>
-                <ul className="sub-menu" style={activeLi("Portfolio")}>
+                <Link legacyBehavior href="blog-grid">
+                  Blog
+                </Link>
+                {/* <ul className="sub-menu" style={activeLi('Portfolio')}>
                   <li>
                     <Link legacyBehavior href="blog-grid">
                       Blog Gird
@@ -179,11 +188,11 @@ const MobileMenu = () => {
                 <a
                   className="mean-expand"
                   href="#"
-                  onClick={() => activeMenuSet("Portfolio")}
+                  onClick={() => activeMenuSet('Portfolio')}
                   style={{ fontSize: 18 }}
                 >
-                  {activeBtn("Portfolio")}
-                </a>
+                  {activeBtn('Portfolio')}
+                </a> */}
               </li>
               <li className="mean-last">
                 <Link legacyBehavior href="contact">

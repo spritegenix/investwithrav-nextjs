@@ -75,3 +75,70 @@ border-radius: 3rem !important;
   height: auto;
   object-fit: cover;
 }
+
+.services-images{
+  height: 450px;
+  width: 650px;
+}
+
+.services-images img{
+  height: auto;
+  width: 100%;
+}
+
+.plots-images{
+  height: 13rem;
+  width: 18rem;
+  margin: auto;
+}
+
+.plots-images img{
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+  .plots-images{
+    height: 15rem ;
+    width: 21rem ;
+}
+.services-images{
+  height: 300px;
+  width: 400px;
+
+}
+}
+@media only screen and (max-width: 398px) {
+  .plots-images{
+    height: 12rem ;
+    width: 15rem ;
+}
+.services-images{
+  height: 200px;
+  width: 295px;
+  margin: auto;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+  .plots-images{
+    height: 10rem;
+    width: 15rem;
+}
+.services-images{
+  height: 410px;
+  width: 600px;
+}
+}
+
+@media  (min-width: 768px) and (max-width: 991px){
+  .plots-images{
+    height: 13rem;
+    width: 17rem;
+  }
+  .services-images{
+    height: 450px;
+    width: 650px;
+    margin: auto;
+  }
+}

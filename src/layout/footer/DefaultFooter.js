@@ -36,7 +36,7 @@ const Footer = () => {
 
             <div className="col-lg-3 col-6">
               <div className="widget widget-nav-menu">
-                <h4 className="widget-title">Company</h4>
+                <h4 className="widget-title">Quick Links</h4>
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
@@ -45,17 +45,17 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="about">
+                      <Link legacyBehavior href="/about">
                         About Us
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="contact">
+                      <Link legacyBehavior href="/contact">
                         Contact Us
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="service">
+                      <Link legacyBehavior href="/service">
                         Service
                       </Link>
                     </li>
@@ -70,13 +70,15 @@ const Footer = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <a href="#">Business Consulting</a>
+                      <a href="/services/business-consulting">
+                        Business Consulting
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Organic Farming</a>
+                      <a href="/services/organic-farming">Organic Farming</a>
                     </li>
                     <li>
-                      <a href="#">The River Castle</a>
+                      <a href="/services/river-castle">The River Castle</a>
                     </li>
                   </ul>
                 </div>
@@ -140,7 +142,7 @@ const Footer = () => {
                   <Link legacyBehavior href="/">
                     <a className="logo_thumb" title="RAV Group">
                       <img
-                        src="../assets/images/logo.png"
+                        src="../assets/images/home/logo2.png"
                         alt="RAV Group Logo"
                       />
                     </a>
@@ -152,7 +154,11 @@ const Footer = () => {
                 <div className="footer-bottom-content">
                   <div className="footer-bottom-content-copy">
                     <p>
-                      © 2024 <span>RAV Group</span> all rights reserved.
+                      © 2024 <span>RAV Group</span> All rights reserved.
+                      Designed by{' '}
+                      <a href="https://www.spritegenix.com/" target="_blank">
+                        <span>SpriteGenix</span>
+                      </a>
                     </p>
                   </div>
                 </div>

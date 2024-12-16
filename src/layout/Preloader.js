@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 const Preloader = () => {
   useEffect(() => {
     setTimeout(() => {
-      document.querySelector("body").classList.add("loaded");
-    }, 2000);
+      document.querySelector('body').classList.add('loaded');
+    }, 200);
   }, []);
   return (
     <div className="loader-wrapper">

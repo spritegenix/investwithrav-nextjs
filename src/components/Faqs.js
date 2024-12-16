@@ -6,9 +6,9 @@ const faqsData = [
     id: 1,
     title: 'What services does RAV offer?',
   },
-  { id: 2, title: 'How do I get in touch with RAV for a consultation?' },
+  { id: 2, title: 'How do I get in touch for a consultation?' },
   { id: 3, title: "What makes RAV's approach unique?" },
-  { id: 4, title: 'Can RAV customize solutions for my business needs?' },
+  { id: 4, title: 'Can RAV tailor solutions for my business?' },
 ];
 
 const Faqs = () => {

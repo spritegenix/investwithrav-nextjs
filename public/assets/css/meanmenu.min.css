@@ -1,6 +1,6 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #FF3B00;
+  background: #34bd6b;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -119,13 +119,13 @@ a.meanmenu-reveal{display:none}
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
-.mean-container .mean-bar::before {
+/* .mean-container .mean-bar::before {
     color: #fff;
-    content: "Consen";
+    content: "";
     font-size: 28px;
     font-weight: 600;
     left: 10px;
     position: absolute;
     top: 18px;
-}
+} */
 

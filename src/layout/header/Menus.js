@@ -1,6 +1,19 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export const DaskTopMenusMenus = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <ul className="nav_scroll">
       {' '}
@@ -36,7 +49,7 @@ export const DaskTopMenusMenus = () => {
         </ul> */}
       </li>{' '}
       <li>
-        <Link legacyBehavior href="about">
+        <Link legacyBehavior href="/about">
           About Us
         </Link>
         {/* <a href="#">
@@ -90,7 +103,7 @@ export const DaskTopMenusMenus = () => {
         </ul> */}
       </li>{' '}
       <li>
-        <a href="service">
+        <a href="/service">
           Services{' '}
           <span>
             <i className="fas" />
@@ -116,7 +129,7 @@ export const DaskTopMenusMenus = () => {
         </Link>
       </li>{' '} */}
       <li>
-        <Link href="blog-grid">
+        <Link href="/blog-grid">
           Blog{' '}
           <span>
             <i className="fas" />
@@ -146,11 +159,15 @@ export const DaskTopMenusMenus = () => {
           </li>
         </ul> */}
       </li>{' '}
-      {/* <li>
-        <Link legacyBehavior href="contact">
-          Contact
-        </Link>
-      </li> */}
+      {isSmallScreen ? (
+        <li>
+          <Link legacyBehavior href="contact">
+            Contact
+          </Link>
+        </li>
+      ) : (
+        ''
+      )}
     </ul>
   );
 };

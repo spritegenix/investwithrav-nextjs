@@ -1,10 +1,12 @@
+import BlogSection from '@/src/components/BlogSection';
 import Counter from '@/src/components/Counter';
 import ProssessBar from '@/src/components/ProssessBar';
+import Testimonial from '@/src/components/Testimonial';
 import Layout from '@/src/layout/Layout';
 import { brandListProps, caseStudyProps } from '@/src/sliderProps';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+//#34bd6b
 const sponsors = [
   {
     id: 1,
@@ -28,21 +30,24 @@ const sponsors = [
   },
 ];
 
-const articles = [
+export const articles = [
   {
     id: 1,
     title: '5 THINGS THAT TAKE A ROOM FROM GOOD TO GREAT',
-    href: '/5-things-that-take-a-room-from-good-to-great',
+    href: '/blog/5-things-that-take-a-room-from-good-to-great',
+    image: '../assets/images/home/blog/blog-01.webp',
   },
   {
     id: 2,
     title: 'FUNCTIONAL AND STYLISH WALL-TO-WALL SHELVES',
-    href: '/functional-and-stylish-wall-to-wall-shelves',
+    href: '/blog/functional-and-stylish-wall-to-wall-shelves',
+    image: '../assets/images/home/blog/blog-02.webp',
   },
   {
     id: 3,
     title: 'THE 5 SECRETS TO PULLING OFF SIMPLE, MINIMAL DESIGN',
-    href: '/the-5-secrets-to-pulling-off-simple-minimal-design',
+    href: '/blog/the-5-secrets-to-pulling-off-simple-minimal-design',
+    image: '../assets/images/home/blog/blog-03.webp',
   },
 ];
 
@@ -411,7 +416,7 @@ const Index = () => {
       {/*==================================================*/}
       {/* Start consen case study Area */}
       {/*==================================================*/}
-      <div className="case-study-area">
+      {/* <div className="case-study-area">
         <div className="container">
           <div className="row case-study-bg align-items-center mb-40">
             <div className="col-lg-6 col-md-8">
@@ -692,6 +697,64 @@ const Index = () => {
             </Swiper>
           </div>
         </div>
+      </div> */}
+      <div className="skill-area">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="extra-animation-div">
+                <div className="consen-section-title white">
+                  <h2> Be Part of a Legacy </h2>
+                  <h2>
+                    That Builds <span>Dreams</span>
+                  </h2>
+                </div>
+                <div className="lines style-three upper pt-30 pb-10">
+                  <div className="line" />
+                </div>
+                <div className="dreamit-smart-title">
+                  <p className="slill-text">
+                    We believe in creating more than just homes or
+                    investments—we create spaces where stories begin,
+                    aspirations grow, and communities thrive. Our journey has
+                    been one of passion, perseverance, and purpose, connecting
+                    hearts and building a future shaped by trust.
+                  </p>
+                </div>
+              </div>
+              <ProssessBar />
+            </div>
+            <div className="col-md-6">
+              <div className="slill-single-thumb mt-4 mt-lg-0 pl-50 ml-1">
+                <img
+                  src="assets/images/home/rav_award.jpg"
+                  alt="Our Experience"
+                />
+                {/* thumb content */}
+                <div className="skill-thumb-content">
+                  <div className="skill-title">
+                    <h3 className="counter"> 11 </h3>
+                    <span>+</span>
+                    <h5> YEARS OF EXPERIENCE </h5>
+                  </div>
+                </div>
+                {/* skill shape */}
+                <div className="skill-shape dance">
+                  <img
+                    src="assets/images/resource/skill-shape.png"
+                    alt="Decorative Shape"
+                  />
+                </div>
+                <div className="skill-shape1 bounce-animate2">
+                  <img
+                    src="assets/images/resource/all-shape.png"
+                    alt="Dynamic Shape"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/*==================================================*/}
       {/* End consen case study Area */}
@@ -842,7 +905,7 @@ const Index = () => {
       {/*==================================================*/}
       {/* Start consen Skills Area Css */}
       {/*==================================================*/}
-      <div className="skill-area">
+      {/* <div className="skill-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
@@ -874,7 +937,7 @@ const Index = () => {
                   src="assets/images/resource/skill.png"
                   alt="Our Experience"
                 />
-                {/* thumb content */}
+                
                 <div className="skill-thumb-content">
                   <div className="skill-title">
                     <h3 className="counter"> 17 </h3>
@@ -882,7 +945,7 @@ const Index = () => {
                     <h5> YEARS OF EXPERIENCE </h5>
                   </div>
                 </div>
-                {/* skill shape */}
+
                 <div className="skill-shape dance">
                   <img
                     src="assets/images/resource/skill-shape.png"
@@ -899,7 +962,17 @@ const Index = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      {/*==================================================*/}
+      {/* Start consen Testimonial Area */}
+      {/*==================================================*/}
+      <div className="testimonial-area">
+        <Testimonial />
       </div>
+      {/*==================================================*/}
+      {/* End consen Testimonial Area */}
+      {/*==================================================*/}
 
       {/*==================================================*/}
       {/* End consen Skill Area Css */}
@@ -908,192 +981,7 @@ const Index = () => {
       {/* Start consen Blog Area */}
       {/*==================================================*/}
       <div className="blog-area blog-new">
-        <div className="container">
-          <div className="row align-items-center mb-40">
-            <div className="col-lg-7 col-md-8">
-              <div className="consen-section-title mobile-center">
-                <h2>
-                  {' '}
-                  <span> Latest Blog Highlights:</span> Design Tips, Functional
-                  Spaces, and More{' '}
-                </h2>
-                {/* <h2>
-                  {' '}
-                  from Latest <span> News </span>
-                </h2> */}
-              </div>
-            </div>
-            <div className="col-lg-5 col-md-4">
-              <div className="consen-button text-right">
-                <Link legacyBehavior href="/blog-grid">
-                  <a>
-                    {' '}
-                    View all Blog <i className="bi bi-plus" />{' '}
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            {articles.map((item) => (
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-box">
-                  <div className="single-blog-thumb">
-                    <img src="assets/images/resource/blog1.png" alt />
-                    {/* <div className="blog-top-button">
-                      <a href={item.href}> {item.title} </a>
-                    </div> */}
-                  </div>
-                  <div className="em-blog-content">
-                    <div className="meta-blog-text">
-                      <p> August 25, 2023 </p>
-                    </div>
-                    <div className="em-blog-title">
-                      <h2>
-                        {' '}
-                        <Link legacyBehavior href="/blog-details">
-                          <a> {item.title.substring(0, 40) + '...'} </a>
-                        </Link>{' '}
-                      </h2>
-                    </div>
-                    <div className="em-blog-icon">
-                      <div className="em-blog-thumb">
-                        <img src="assets/images/resource/blog-icon.png" alt />
-                      </div>
-                      {/* <div className="em-blog-icon-title">
-                        <h6> Alex Collins </h6>
-                      </div> */}
-                    </div>
-                    <div className="blog-button">
-                      <Link legacyBehavior href={item.href}>
-                        <a>
-                          {' '}
-                          Learn More <i className="bi bi-plus" />{' '}
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-            {/* <div className="single-blog-box">
-                <div className="single-blog-thumb">
-                  <img src="assets/images/resource/blog1.png" alt />
-                  <div className="blog-top-button">
-                    <a href="#"> GRAPHIC </a>
-                  </div>
-                </div>
-                <div className="em-blog-content">
-                  <div className="meta-blog-text">
-                    <p> August 25, 2023 </p>
-                  </div>
-                  <div className="em-blog-title">
-                    <h2>
-                      {' '}
-                      <Link legacyBehavior href="/blog-details">
-                        <a> Popular Consultants are big Meetup 2023 </a>
-                      </Link>{' '}
-                    </h2>
-                  </div>
-                  <div className="em-blog-icon">
-                    <div className="em-blog-thumb">
-                      <img src="assets/images/resource/blog-icon.png" alt />
-                    </div>
-                    <div className="em-blog-icon-title">
-                      <h6> Alex Collins </h6>
-                    </div>
-                  </div>
-                  <div className="blog-button">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>
-                        {' '}
-                        Learn More <i className="bi bi-plus" />{' '}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
-
-            {/* <div className="col-lg-4 col-md-6">
-              <div className="single-blog-box">
-                <div className="single-blog-thumb">
-                  <img src="assets/images/resource/blog2.png" alt />
-                  <div className="blog-top-button">
-                    <a href="#"> DEVELOPMENT </a>
-                  </div>
-                </div>
-                <div className="em-blog-content">
-                  <div className="meta-blog-text">
-                    <p> August 21, 2023 </p>
-                  </div>
-                  <div className="em-blog-title">
-                    <h2>
-                      {' '}
-                      <Link legacyBehavior href="/blog-details">
-                        <a> How to Increase Business Products Sales </a>
-                      </Link>{' '}
-                    </h2>
-                  </div>
-                  <div className="em-blog-icon">
-                    <div className="em-blog-thumb">
-                      <img src="assets/images/resource/blog-icon.png" alt />
-                    </div>
-                    <div className="em-blog-icon-title">
-                      <h6> Julia Moris </h6>
-                    </div>
-                  </div>
-                  <div className="blog-button">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>
-                        {' '}
-                        Learn More <i className="bi bi-plus" />{' '}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-blog-box">
-                <div className="single-blog-thumb">
-                  <img src="assets/images/resource/blog3.png" alt />
-                  <div className="blog-top-button">
-                    <a href="#"> DESIGN </a>
-                  </div>
-                </div>
-                <div className="em-blog-content">
-                  <div className="meta-blog-text">
-                    <p> August 20, 2023 </p>
-                  </div>
-                  <div className="em-blog-title">
-                    <h2>
-                      {' '}
-                      <Link legacyBehavior href="/blog-details">
-                        <a> Top 10 Most Populars Google Chrome app</a>
-                      </Link>
-                    </h2>
-                  </div>
-                  <div className="em-blog-icon">
-                    <div className="em-blog-thumb">
-                      <img src="assets/images/resource/blog-icon.png" alt />
-                    </div>
-                    <div className="em-blog-icon-title">
-                      <h6> Amantha </h6>
-                    </div>
-                  </div>
-                  <div className="blog-button">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>
-                        {' '}
-                        Learn More <i className="bi bi-plus" />{' '}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-          </div>
-        </div>
+        <BlogSection articles={articles} />
       </div>
     </Layout>
   );

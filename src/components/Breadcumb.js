@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Breadcumb = ({ pageName }) => {
   return (
@@ -22,7 +22,11 @@ const Breadcumb = ({ pageName }) => {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li> {pageName} </li>
+                <li>
+                  {' '}
+                  {pageName.substring(0, 28) +
+                    `${pageName.length > 28 ? '... ' : ''}`}{' '}
+                </li>
               </ul>
             </div>
           </div>

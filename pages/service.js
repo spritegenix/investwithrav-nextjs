@@ -308,7 +308,7 @@ const Service = () => {
                     <div className="testimonial-content1">
                       <div className="single-quote-icon">
                         <div className="quote-thumb">
-                          <img src="assets/images/resource/testi1.png" alt />
+                          <img src="assets/images/home/review.png" alt />
                         </div>
                         <div className="quote-title">
                           <h4>{item.name}</h4>

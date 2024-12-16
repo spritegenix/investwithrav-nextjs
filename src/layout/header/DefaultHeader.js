@@ -10,12 +10,12 @@ const DefaultHeader = () => {
             <div className="logo">
               <Link legacyBehavior href="/">
                 <a className="logo_img" title="consen">
-                  <img src="../assets/images/logo.png" alt="logo" />
+                  <img src="../assets/images/home/logo2.png" alt="logo" />
                 </a>
               </Link>
               <Link legacyBehavior href="/">
                 <a className="main_sticky" title="consen">
-                  <img src="../assets/images/logo.png" alt="logo" />
+                  <img src="../assets/images/home/logo2.png" alt="logo" />
                 </a>
               </Link>
             </div>

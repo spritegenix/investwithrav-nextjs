@@ -78,23 +78,23 @@ const Footer1 = () => {
             </div>
             <div className="col-lg-3 col-6">
               <div className="widget widget-nav-menu">
-                <h4 className="widget-title"></h4>
+                <h4 className="widget-title">Quick Links</h4>
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="about">About Us</a>
+                      <a href="/about">About Us</a>
                     </li>
                     <li>
-                      <a href="service">Services</a>
+                      <a href="/service">Services</a>
                     </li>
                     <li>
-                      <a href="#">Blog</a>
+                      <a href="blog-grid">Blog</a>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <a href="/contact">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -106,13 +106,19 @@ const Footer1 = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <a href="#">Business Consulting</a>
+                      <Link href="/services/business-consulting">
+                        Business Consulting
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">Organic Farming</a>
+                      <Link href="/services/organic-farming">
+                        Organic Farming
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">The River Castle</a>
+                      <Link href="/services/river-castle">
+                        The River Castle
+                      </Link>
                     </li>
                     {/* <li>
                       <a href="#">Corporate Finance</a>
@@ -185,7 +191,10 @@ const Footer1 = () => {
               <div className="consen-logo">
                 <Link legacyBehavior href="/">
                   <a className="logo_thumb" title="RAV Group">
-                    <img src="assets/images/logo.png" alt="RAV Group Logo" />
+                    <img
+                      src="../assets/images/home/logo2.png"
+                      alt="RAV Group Logo"
+                    />
                   </a>
                 </Link>
               </div>
@@ -194,9 +203,11 @@ const Footer1 = () => {
               <div className="footer-bottom-content">
                 <div className="footer-bottom-content-copy">
                   <p>
-                    © 2024 <span>RAV Group</span> all rights reserved.
-                    {/* Design By
-                    Dream-IT. */}
+                    © 2024 <span>RAV Group</span> All rights reserved. Designed
+                    by{' '}
+                    <a href="https://www.spritegenix.com/" target="_blank">
+                      <span>SpriteGenix</span>
+                    </a>
                   </p>
                 </div>
               </div>

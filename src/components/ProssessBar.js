@@ -57,15 +57,15 @@ const ProgressBar = () => {
               transition: 'left 7s ease-in-out 0s',
             }}
           >
-            75%
+            95%
           </span>
         </div>
         <span
           className="fill my-class2"
-          data-percentage={75}
+          data-percentage={95}
           style={{
             background: 'rgb(22, 181, 151)',
-            width: '75%',
+            width: '95%',
             transition: 'width 7s ease-in-out 0s',
           }}
         />

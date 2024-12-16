@@ -81,7 +81,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   transition: 0.5s;
 }
 .header-top-social a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 .header_top_menu {
   background: #141323;
@@ -131,7 +131,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   top: 8px;
   height: 2px;
   width: 35px;
-  background: #ff3b00;
+  background: #34bd6b;
 }
 
 .header_top_menu_icon_inner {
@@ -227,7 +227,7 @@ nav.consen_menu span {
 }
 
 .consen_menu > ul > li > a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*menu button*/
@@ -239,14 +239,14 @@ nav.consen_menu span {
 .header-button a {
   padding: 12px 35px;
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 30px;
   display: inline-block;
   font-family: "Fira Sans";
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
 }
 
 .header-button a:before {
@@ -303,7 +303,7 @@ nav.consen_menu span {
 }
 
 .style-two .consen_menu > ul > li > a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /* Style Three */
@@ -327,7 +327,7 @@ nav.consen_menu span {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
   visibility: hidden;
-  border-top: 2px solid #ff3c00;
+  border-top: 2px solid #34bd6b;
   opacity: 0;
 }
 
@@ -361,7 +361,7 @@ nav.consen_menu span {
 .consen_menu ul .sub-menu .sub-menu li:hover > a,
 .consen_menu ul .sub-menu .sub-menu .sub-menu li:hover > a,
 .consen_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover > a {
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff !important;
 }
 
@@ -399,7 +399,7 @@ nav.consen_menu span {
 }
 
 ul.sub-menu li a span {
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 5px 10px;
   color: #fff;
   opacity: 1;
@@ -465,7 +465,7 @@ ul.sub-menu li:hover a span {
 }
 .consen_nav_manu.style-three .header-button a {
   border-radius: 0;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
 }
 .consen_nav_manu.style-three .header-button a:before {
   border-radius: 0;
@@ -516,7 +516,7 @@ ul.sub-menu li:hover a span {
   top: 10px;
   width: 40px;
   height: 2px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .slider-content h1 {
@@ -526,7 +526,7 @@ ul.sub-menu li:hover a span {
 }
 
 .slider-content span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .slider-content p {
@@ -552,10 +552,10 @@ ul.sub-menu li:hover a span {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #ff3b00;
+  border: 1px solid #34bd6b;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -582,7 +582,7 @@ ul.sub-menu li:hover a span {
   border-radius: 25px;
   text-align: center;
   background: #fff;
-  color: #ff3b00;
+  color: #34bd6b;
   display: inline-block;
   margin-left: 14px;
   position: relative;
@@ -591,7 +591,7 @@ ul.sub-menu li:hover a span {
 }
 
 .slider-button a:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .slider-button a:hover:before {
@@ -600,7 +600,7 @@ ul.sub-menu li:hover a span {
 }
 
 .slider-button a:hover i {
-  background: #ff3b00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -664,7 +664,7 @@ ul.sub-menu li:hover a span {
   line-height: 80px;
   text-align: center;
   border-radius: 50%;
-  color: #ff3b00;
+  color: #34bd6b;
   background: #fff;
   display: inline-block;
   font-size: 26px;
@@ -689,7 +689,7 @@ ul.sub-menu li:hover a span {
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   display: inline-block;
   font-size: 15px;
 }
@@ -719,7 +719,7 @@ ul.sub-menu li:hover a span {
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   display: inline-block;
   font-size: 16px;
 }
@@ -757,7 +757,7 @@ ul.sub-menu li:hover a span {
   line-height: 30px;
   position: relative;
   z-index: 1;
-  border-left: 3px solid #ff3c00;
+  border-left: 3px solid #34bd6b;
   padding-left: 1rem;
 }
 
@@ -780,7 +780,7 @@ ul.sub-menu li:hover a span {
 
 .slider2 .slider-button a:hover i {
   background: #fff;
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 /*slider shape*/
@@ -871,7 +871,7 @@ ul.sub-menu li:hover a span {
   top: 19px;
   height: 2px;
   width: 45px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .banner-content h1 {
@@ -889,7 +889,7 @@ ul.sub-menu li:hover a span {
 
 .banner-button a {
   display: inline-block;
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 14px 35px;
   color: #fff;
   border-radius: 30px;
@@ -940,7 +940,7 @@ ul.sub-menu li:hover a span {
 }
 
 .consen-section-title span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .consen-section-title p {
@@ -953,7 +953,7 @@ ul.sub-menu li:hover a span {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 500;
-  color: #ff3c00;
+  color: #34bd6b;
   margin: 0 0 16px;
   position: relative;
   margin-left: 53px;
@@ -967,7 +967,7 @@ ul.sub-menu li:hover a span {
   left: -53px;
   height: 2px;
   width: 41px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 /*center before after*/
@@ -984,7 +984,7 @@ ul.sub-menu li:hover a span {
   margin: auto;
   height: 2px;
   width: 41px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .upper.consen-section-title h5:after {
@@ -995,7 +995,7 @@ ul.sub-menu li:hover a span {
   margin: auto;
   height: 2px;
   width: 41px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 /**
@@ -1056,7 +1056,7 @@ ul.sub-menu li:hover a span {
   margin: auto;
   width: 40px;
   height: 2px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .em-service-icon {
@@ -1125,7 +1125,7 @@ ul.sub-menu li:hover a span {
 
 .service-button a i {
   font-size: 18px;
-  color: #ff3c00;
+  color: #34bd6b;
   display: inline-block;
   position: relative;
   top: 2px;
@@ -1138,10 +1138,10 @@ ul.sub-menu li:hover a span {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #ff3b00;
+  border: 1px solid #34bd6b;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1168,7 +1168,7 @@ ul.sub-menu li:hover a span {
   border-radius: 25px;
   text-align: center;
   background: #fff;
-  color: #ff3b00;
+  color: #34bd6b;
   display: inline-block;
   margin-left: 14px;
   position: relative;
@@ -1177,7 +1177,7 @@ ul.sub-menu li:hover a span {
 }
 
 .consen-button a:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .consen-button a:hover:before {
@@ -1186,7 +1186,7 @@ ul.sub-menu li:hover a span {
 }
 
 .consen-button a:hover i {
-  background: #ff3b00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -1205,7 +1205,7 @@ ul.sub-menu li:hover a span {
 }
 
 .dreamit-service-box:hover .em-service-icon {
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .dreamit-service-box:hover .service-button a:before {
@@ -1313,7 +1313,7 @@ ul.sub-menu li:hover a span {
 
 /*service bar*/
 .style-three .service-bar {
-  background: #ff3c00;
+  background: #34bd6b;
   height: 2px;
   width: 64px;
   position: relative;
@@ -1353,7 +1353,7 @@ ul.sub-menu li:hover a span {
 }
 
 .style-three .dreamit-service-box:hover .service-bar:before {
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .style-three .dreamit-service-box:hover .em-service-title h3 {
@@ -1396,10 +1396,10 @@ ul.sub-menu li:hover a span {
   padding: 6px 25px;
   font-size: 15px;
   font-weight: 500;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
   font-family: "Fira Sans";
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 30px;
   display: inline-block;
   margin-left: 15px;
@@ -1476,15 +1476,15 @@ ul.sub-menu li:hover a span {
   top: 8px;
   height: 2px;
   width: 30px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .service-area.new-style .single-service-box:hover {
-  border-color: #ff3c00;
+  border-color: #34bd6b;
 }
 
 .service-area.new-style .service-content a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /**
@@ -1514,7 +1514,7 @@ ul.sub-menu li:hover a span {
 
 /*detials description*/
 .serivce-details-desc p span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*detials box*/
@@ -1577,7 +1577,7 @@ ul.sub-menu li:hover a span {
 
 .widget-service-details-icon i {
   font-size: 25px;
-  color: #ff3c00;
+  color: #34bd6b;
   display: inline-block;
   margin-right: 2px;
   position: relative;
@@ -1607,7 +1607,7 @@ ul.sub-menu li:hover a span {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 10px solid #ff3c00;
+  border: 10px solid #34bd6b;
   border-radius: 50%;
   opacity: 0.3;
 }
@@ -1621,7 +1621,7 @@ ul.sub-menu li:hover a span {
   height: 70px;
   line-height: 70px;
   text-align: center;
-  background: #ff3c00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -1674,7 +1674,7 @@ button.icons {
   top: 0;
   height: 60px;
   width: 60px;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1728,7 +1728,7 @@ button.icons {
   top: 0;
   height: 24px;
   width: 2px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .service-detials-area .categories-title h4:before {
@@ -1753,7 +1753,7 @@ button.icons {
 
 .widget-categories-menu ul li:hover,
 .widget-categories-menu ul li.active {
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -1795,7 +1795,7 @@ button.icons {
   padding: 17px 40px;
   font-size: 17px;
   font-weight: 500;
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
   border-radius: 4px;
   display: inline-block;
@@ -1833,7 +1833,7 @@ button.icons {
 }
 
 .dreamit-icon-title h4 span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .dreamit-icon-list ul li {
@@ -1848,7 +1848,7 @@ button.icons {
   line-height: 20px;
   text-align: center;
   border-radius: 10px;
-  background-color: #ff3c00;
+  background-color: #34bd6b;
   display: inline-block;
   color: #fff;
   font-size: 11px;
@@ -1865,7 +1865,7 @@ button.icons {
 /* Feature Area New Style */
 
 .feature-area.new-style {
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 40px 0 26px;
 }
 
@@ -1909,10 +1909,10 @@ button.icons {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #ff3b00;
+  border: 1px solid #34bd6b;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1940,7 +1940,7 @@ button.icons {
   border-radius: 25px;
   text-align: center;
   background: #fff;
-  color: #ff3b00;
+  color: #34bd6b;
   display: inline-block;
   margin-left: 14px;
   position: relative;
@@ -1949,7 +1949,7 @@ button.icons {
 }
 
 .about-button a:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .about-button a:hover:before {
@@ -1958,7 +1958,7 @@ button.icons {
 }
 
 .about-button a:hover i {
-  background: #ff3b00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -2019,7 +2019,7 @@ p.about-text2 {
   left: 0;
   top: 18px;
   width: 22px;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
 }
 
 .dreamit-ceo-title span {
@@ -2087,7 +2087,7 @@ p.about-text1 {
   border-radius: 0;
   background-color: inherit;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 22px;
   margin-right: 8px;
   position: relative;
@@ -2100,10 +2100,10 @@ p.about-text1 {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #ff3b00;
+  border: 1px solid #34bd6b;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -2123,11 +2123,11 @@ p.about-text1 {
 }
 
 .style-three .about-button a:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .style-three .about-button a:hover i {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 /*progress bar*/
@@ -2166,7 +2166,7 @@ p.about-text1 {
   top: 0;
   width: 1em;
   height: 1em;
-  background: #ff3c00;
+  background: #34bd6b;
   clip: rect(0 1em 1em 0.5em);
   transform: rotate(180deg);
   transition: 1.05s;
@@ -2182,7 +2182,7 @@ p.about-text1 {
   top: 0em;
   right: 0;
   bottom: 0;
-  background: #ff3c00;
+  background: #34bd6b;
   content: "";
 }
 
@@ -2306,7 +2306,7 @@ p.about-text1 {
 
 .new-button a {
   display: inline-block;
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 14px 35px;
   color: #fff;
   border-radius: 30px;
@@ -2382,7 +2382,7 @@ p.about-text1 {
   font-size: 48px;
   font-weight: 600;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .counter-title p {
@@ -2450,7 +2450,7 @@ p.about-text1 {
 
 .case-study-title h6 {
   font-size: 17px;
-  color: #ff3c00;
+  color: #34bd6b;
   font-weight: 500;
   padding: 0 0 0 32px;
   position: relative;
@@ -2464,7 +2464,7 @@ p.about-text1 {
   left: 0;
   top: 10px;
   width: 22px;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
 }
 
 .case-study-title h3 {
@@ -2515,8 +2515,8 @@ p.about-text1 {
 .case-study-thumb:hover:before {
   background-image: linear-gradient(
     0deg,
-    rgba(255, 59, 0, 0.902) 0%,
-    rgba(255, 59, 0, 0.902) 24%,
+    #34bd6be6 0%,
+    #34bd6be6 24%,
     rgba(255, 59, 0, 0) 62%,
     rgba(255, 59, 0, 0) 100%
   );
@@ -2554,7 +2554,7 @@ p.about-text1 {
   width: 12px;
   height: 12px;
   border-radius: 6px;
-  background-color: #ff3c00;
+  background-color: #34bd6b;
   display: inline-block;
   position: relative;
   top: 4px;
@@ -2582,7 +2582,7 @@ p.choose-text1 {
   border-radius: 0;
   background-color: inherit;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 22px;
   margin-right: 8px;
   position: relative;
@@ -2608,7 +2608,7 @@ p.choose-text1 {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
   position: relative;
@@ -2641,7 +2641,7 @@ p.choose-text1 {
 
 /*case study all hover*/
 .why-choose-button a:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .why-choose-button a:hover:before {
@@ -2650,7 +2650,7 @@ p.choose-text1 {
 }
 
 .why-choose-button a:hover i {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 /*case study shape*/
@@ -2735,7 +2735,7 @@ p.choose-text1 {
 .portfolio_nav ul li:hover,
 .portfolio_nav ul li.current_menu_item {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 /*case study thumb*/
@@ -2827,7 +2827,7 @@ p.choose-text1 {
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   display: inline-block;
   font-size: 13px;
 }
@@ -2847,7 +2847,7 @@ p.choose-text1 {
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   display: inline-block;
   font-size: 16px;
 }
@@ -2936,7 +2936,7 @@ p.choose-text1 {
   bottom: -10px;
   right: 0;
   text-align: left;
-  background: #ff3c00;
+  background: #34bd6b;
   margin: auto;
   padding: 5px 30px 18px;
   width: 92%;
@@ -3054,7 +3054,7 @@ p.choose-text1 {
 }
 
 .quote-title p {
-  color: #ff3c00;
+  color: #34bd6b;
   transition: 0.5s;
 }
 
@@ -3066,7 +3066,7 @@ p.choose-text1 {
 }
 
 .em-testi-start-icon i {
-  color: #ff3c00;
+  color: #34bd6b;
   transition: 0.5s;
   display: inline-block;
 }
@@ -3093,7 +3093,7 @@ p.choose-text1 {
   font-size: 30px;
   font-weight: 600;
   font-family: "Fira Sans";
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .testi-counter-title p {
@@ -3163,7 +3163,7 @@ p.choose-text1 {
   width: 14px;
   height: 14px;
   border-radius: 6px;
-  background-color: #ff3c00;
+  background-color: #34bd6b;
   display: inline-block;
   position: relative;
   top: 4px;
@@ -3185,7 +3185,7 @@ p.choose-text1 {
 }
 
 .testimonial-ratting i {
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 13px;
 }
 
@@ -3325,7 +3325,7 @@ p.choose-text1 {
 
 .process-title h3 {
   font-size: 22px;
-  color: #f83d04;
+  color: #34bd6b;
   font-weight: 600;
   font-family: "Fira Sans";
   transition: 0.5s;
@@ -3350,7 +3350,7 @@ p.choose-text1 {
 }
 
 .dreamit-smart-title span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .process-area .about-button a {
@@ -3434,7 +3434,7 @@ p.choose-text1 {
   margin: auto;
   height: 62px;
   width: 62px;
-  background: #fe6637;
+  background: #34bd6b;
   transition: 0.5s;
   z-index: -1;
   border-radius: 100%;
@@ -3534,7 +3534,7 @@ p.choose-text1 {
 /*team title*/
 .team-title {
   padding: 10px 0 17px;
-  background: #ff3c00;
+  background: #34bd6b;
   text-align: center;
   width: 80%;
   position: relative;
@@ -3596,7 +3596,7 @@ p.choose-text1 {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #ff3c00;
+  background: #34bd6b;
   transform: scale(0);
   border-radius: 50px;
   transition: 0.5s;
@@ -3717,7 +3717,7 @@ p.choose-text1 {
 .accordion a:before {
   width: 2px;
   height: 10px;
-  background: #ff3c00;
+  background: #34bd6b;
   position: absolute;
   right: 32px;
   content: " ";
@@ -3729,7 +3729,7 @@ p.choose-text1 {
 .accordion a:after {
   width: 10px;
   height: 2px;
-  background: #ff3c00;
+  background: #34bd6b;
   position: absolute;
   right: 28px;
   content: " ";
@@ -3750,8 +3750,8 @@ p.choose-text1 {
 
 a.active {
   color: #fff !important;
-  /* border: 1px solid #FF3C00 !important; */
-  background: #ff3c00 !important;
+  /* border: 1px solid #34bd6b !important; */
+  background: #34bd6b !important;
 }
 
 .accordion li a span {
@@ -3806,7 +3806,7 @@ a.active {
   border-radius: 0;
   background-color: inherit;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 22px;
   margin-right: 8px;
   position: relative;
@@ -3818,7 +3818,7 @@ a.active {
 }
 
 .study-button a:hover i {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /* Faq New Style */
@@ -3878,7 +3878,7 @@ a.active {
 }
 
 .brand-section.new-style {
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 60px 0 60px;
 }
 
@@ -3907,9 +3907,9 @@ a.active {
 .btn-common a {
   color: #fff;
   font-size: 17px;
-  background: #ff3c00;
+  background: #34bd6b;
   padding: 14px 31px;
-  border: 1px solid #ff3c00;
+  border: 1px solid #34bd6b;
   border-radius: 5px;
   transition: 0.5s;
   text-transform: capitalize;
@@ -3917,7 +3917,7 @@ a.active {
 
 .btn-common a:hover {
   background: #fff;
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .video-icon {
@@ -3929,7 +3929,7 @@ a.active {
   height: 100px;
   line-height: 100px;
   border-radius: 100%;
-  color: #ff3c00;
+  color: #34bd6b;
   background: #fff;
   display: inline-block;
   text-align: center;
@@ -3995,7 +3995,7 @@ a.active {
   left: 0;
   height: 147px;
   width: 100%;
-  background: #ff3c00;
+  background: #34bd6b;
   z-index: -1;
   border-radius: 3px 3px 0 0;
 }
@@ -4061,9 +4061,9 @@ a.active {
 
 .form_box input:focus,
 .form_box textarea:focus {
-  border-color: #ff3c00;
+  border-color: #34bd6b;
   outline: 0;
-  box-shadow: 0 0 6px rgb(204, 48, 0, 0.6);
+  box-shadow: 0 0 6px #34bd6b99;
 }
 
 /*form button*/
@@ -4086,13 +4086,13 @@ a.active {
   margin-right: 5px;
   position: relative;
   top: 2px;
-  color: #ff3c00;
+  color: #34bd6b;
   transition: 0.5s;
 }
 
 .quote_button button:hover {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .quote_button button:hover i {
@@ -4172,7 +4172,7 @@ p.slill-text {
   position: absolute;
   bottom: 0;
   left: 50px;
-  background-color: rgba(255, 60, 0, 0.74556944);
+  background-color: #34bd6b;
   padding: 26px 35px 28px 30px;
   border-radius: 0px 319px 0 0;
 }
@@ -4251,7 +4251,7 @@ p.slill-text {
   color: #ffffff;
   font-weight: 500;
   font-family: "Fira Sans";
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 30px;
   display: inline-block;
   position: relative;
@@ -4363,14 +4363,14 @@ p.slill-text {
 .blog-button i {
   font-size: 20px;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
   position: relative;
   top: 2px;
 }
 
 /*blog all hover*/
 .single-blog-box:hover .em-blog-title h2 a {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .single-blog-box:hover .single-blog-thumb img {
@@ -4411,12 +4411,12 @@ p.slill-text {
 }
 
 .blog-button a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*blog all hover*/
 .blog-area.style-two .consen-button a:hover i {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*blog shape*/
@@ -4480,7 +4480,7 @@ p.slill-text {
 }
 
 .blog-area.new-style .meta-blog-text a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .blog-area.new-style .swiper-pagination-bullet {
@@ -4488,7 +4488,7 @@ p.slill-text {
 }
 
 .blog-area.new-style .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #ff3c00;
+  background-color: #34bd6b;
 }
 
 /***
@@ -4526,7 +4526,7 @@ h4.widget-title:before {
   content: "";
   left: 0;
   top: 42px;
-  background: #ff3c00;
+  background: #34bd6b;
   width: 50px;
   height: 2px;
   transition: 0.5s;
@@ -4596,7 +4596,7 @@ a.social-icon-color3 {
   height: 37px;
   line-height: 37px;
   text-align: center;
-  background: #f70102;
+  background: #34bd6b;
   border-radius: 50px;
   display: inline-block;
   color: #fff;
@@ -4670,7 +4670,7 @@ ul.footer-menu li a {
 
 /*footer all hover*/
 ul.footer-menu li a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .follow-company-icon a:hover:before {
@@ -4678,7 +4678,7 @@ ul.footer-menu li a:hover {
 }
 
 .recent-post-text a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /**footer bottom area**/
@@ -4706,7 +4706,7 @@ a.logo_thumb img {
 }
 
 .footer-bottom-content-copy span {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /**footer shape**/
@@ -4763,7 +4763,7 @@ a.logo_thumb img {
   transition: all 0.4s ease 0s;
   border: medium none;
   border-radius: 0px 5px 5px 0px;
-  background: #ff3c00;
+  background: #34bd6b;
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -4839,7 +4839,7 @@ a.logo_thumb img {
 }
 
 .footer-middle.new-style .footer-bottom-menu ul li a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /***
@@ -4879,7 +4879,7 @@ a.logo_thumb img {
   transition: all 0.4s ease 0s;
   border: medium none;
   border-radius: 35px;
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
   font-family: "Fira Sans";
   font-weight: 500;
@@ -4944,7 +4944,7 @@ a.logo_thumb img {
 
 .subscribe-icon i {
   font-size: 45px;
-  color: #ff3c00;
+  color: #34bd6b;
   transition: 0.5s;
   height: 92px;
   width: 92px;
@@ -5008,7 +5008,7 @@ a.logo_thumb img {
   width: 35px;
   top: 0;
   left: 0px;
-  background-color: #ff3b00;
+  background-color: #34bd6b;
   -webkit-animation: moveLeftBounces-two 35s linear infinite;
   animation: moveLeftBounces-two 35s linear infinite;
   overflow: hidden;
@@ -5062,7 +5062,7 @@ a.logo_thumb img {
   width: 35px;
   top: 0;
   left: 0px;
-  background-color: #ff3b00;
+  background-color: #34bd6b;
   -webkit-animation: moveLeftBounces-one 35s linear infinite;
   animation: moveLeftBounces-one 32s linear infinite;
   overflow: hidden;
@@ -5112,7 +5112,7 @@ a.logo_thumb img {
   width: 35px;
   top: 0;
   left: 0px;
-  background-color: #ff3b00;
+  background-color: #34bd6b;
   -webkit-animation: moveLeftBounces-one 35s linear infinite;
   animation: moveLeftBounces-one 32s linear infinite;
   overflow: hidden;
@@ -5145,7 +5145,7 @@ a.logo_thumb img {
   width: 35px;
   top: 0;
   left: 0px;
-  background-color: #ff3b00;
+  background-color: #34bd6b;
   -webkit-animation: moveLeftBounces-one 35s linear infinite;
   animation: moveLeftBounces-one 32s linear infinite;
   overflow: hidden;
@@ -5236,7 +5236,7 @@ a.logo_thumb img {
 }
 
 span.fill {
-  background: #ff3c00 !important;
+  background: #34bd6b !important;
   border-radius: 5px;
 }
 
@@ -5255,8 +5255,8 @@ span.fill {
   top: 0;
   right: 30px;
   color: #ffffff;
-  background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-  background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+  background-image: -moz-linear-gradient(0deg, #34bd6b 0%, #34bd6b 100%);
+  background-image: -webkit-linear-gradient(0deg, #34bd6b 0%, #34bd6b 100%);
   z-index: 9999;
   width: 45px;
   text-align: center;
@@ -5299,7 +5299,7 @@ span.fill {
   height: 100%;
   z-index: -1;
   background-image: linear-gradient(to right, #00132b 0%, #00132b 100%);
-  background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+  background-image: -ms-linear-gradient(0deg, #34bd6b 0%, #34bd6b 100%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
@@ -5358,7 +5358,7 @@ span.fill {
   color: #fff;
   top: 3px;
   z-index: 1;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .top-wrap .go-top-button i {
@@ -5381,7 +5381,7 @@ span.fill {
   animation: ripple 1.6s ease-out infinite;
   opacity: 0;
   background-image: -moz-linear-gradient(0deg, #69ddcc 0%, #69ddcc 100%);
-  background-image: -webkit-linear-gradient(0deg, #fb8a42 0%, #fb8a42 100%);
+  background-image: -webkit-linear-gradient(0deg, #34bd6b 0%, #34bd6b 100%);
   border-radius: 100%;
 }
 
@@ -5782,7 +5782,7 @@ span.fill {
 }
 
 .breadcumb-content ul li {
-  color: #ff3c00;
+  color: #34bd6b;
   font-weight: 500;
   font-family: "Fira Sans";
   text-transform: capitalize;
@@ -5816,7 +5816,7 @@ span.fill {
   position: absolute;
   right: 0;
   bottom: 0;
-  background: #ff3c00;
+  background: #34bd6b;
   width: 32%;
   height: 53px;
   padding: 15px 60px 0;
@@ -5849,7 +5849,7 @@ span.fill {
   font-weight: 500;
   color: #fff;
   margin: 0;
-  background: #ff3a00;
+  background: #34bd6b;
   padding: 30px 120px 30px 30px;
   border-radius: 10px;
   position: relative;
@@ -5869,7 +5869,7 @@ span.fill {
   border-radius: 50px;
   line-height: 45px;
   background: #fff;
-  color: #ff3a00;
+  color: #34bd6b;
   text-align: center;
   font-size: 20px;
 }
@@ -5907,7 +5907,7 @@ span.fill {
   z-index: 1;
   margin-bottom: 30px;
   overflow: hidden;
-  border-top: 5px solid #ff3d00;
+  border-top: 5px solid #34bd6b;
   transition: 0.5s;
   background: #fff;
   box-shadow: 0px 5px 30px 0px rgb(137 139 143 / 10%);
@@ -5963,7 +5963,7 @@ span.fill {
 
 /*serivece ber*/
 .feature-bar {
-  background: #ff3c00;
+  background: #34bd6b;
   height: 3px;
   width: 64px;
   position: relative;
@@ -6001,7 +6001,7 @@ span.fill {
 }
 
 .feature-back-title h3 {
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 16px;
   font-weight: 500;
   font-family: "Fira Sans";
@@ -6017,7 +6017,7 @@ span.fill {
   left: -40px;
   height: 2px;
   width: 35px;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .feature-back-title h2 {
@@ -6036,7 +6036,7 @@ span.fill {
   margin: auto;
   height: 58px;
   width: 58px;
-  background: #ff3b00;
+  background: #34bd6b;
   line-height: 58px;
   border-radius: 100%;
   left: 0;
@@ -6128,7 +6128,7 @@ span.fill {
   outline: none;
   padding: 5px 26px;
   transition: all 0.2s ease-in-out;
-  border-bottom: 2px solid #ff3c00;
+  border-bottom: 2px solid #34bd6b;
 }
 
 .tabs_item {
@@ -6147,7 +6147,7 @@ span.fill {
 }
 
 li.current a {
-  background: #ff3c00 !important;
+  background: #34bd6b !important;
   color: #fff;
 }
 
@@ -6159,7 +6159,7 @@ ul.tabs-inner-list li {
 ul.tabs-inner-list li i {
   display: inline-block;
   margin-right: 12px;
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 15px;
 }
 
@@ -6176,7 +6176,7 @@ ul.tabs-inner-list li i {
   border-radius: 0;
   background-color: inherit;
   display: inline-block;
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 22px;
   margin-right: 8px;
   position: relative;
@@ -6316,7 +6316,7 @@ ul.tabs-inner-list li i {
 }
 
 .btn-common.pc-btn a {
-  color: #ee3c00;
+  color: #34bd6b;
   background: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -6325,18 +6325,18 @@ ul.tabs-inner-list li i {
 
 .pricing-single-items:hover .btn-common.pc-btn a {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .pricing-single-items.style-2 {
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
   padding: 25px 0;
 }
 
 .pricing-single-items.style-2:hover .btn-common.pc-btn a {
   background-color: #fff;
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .pricing-single-items.style-2 .pricing-title h3,
@@ -6348,7 +6348,7 @@ ul.tabs-inner-list li i {
 
 .pricing-single-items.style2 .btn-common.pc-btn a {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
   border-color: #fff;
 }
 
@@ -6373,7 +6373,7 @@ ul.tabs-inner-list li i {
 
 .content-position {
   font-size: 18px;
-  color: #ff3c00;
+  color: #34bd6b;
   font-weight: 600;
   font-family: "Fira Sans";
 }
@@ -6402,7 +6402,7 @@ ul.tabs-inner-list li i {
 .feature-content-section .single-content .content-icon {
   font-size: 40px;
   margin-right: 30px;
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .feature-content-section .content-text h4 {
@@ -6475,7 +6475,7 @@ ul.tabs-inner-list li i {
   width: 60px;
   line-height: 60px;
   text-align: center;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 5px;
   display: inline-block;
   margin-right: 25px;
@@ -6537,7 +6537,7 @@ ul.tabs-inner-list li i {
 .pagination a {
   font-size: 18px;
   font-weight: 500;
-  color: #ff3c00;
+  color: #34bd6b;
   float: left;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -6550,7 +6550,7 @@ ul.tabs-inner-list li i {
 }
 
 .pagination a:hover {
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -6602,7 +6602,7 @@ ul.tabs-inner-list li i {
 }
 
 .widget-archieve-item:hover {
-  color: #ff3b00;
+  color: #34bd6b;
 }
 
 .widget-items .widget-title h2 {
@@ -6632,7 +6632,7 @@ ul.tabs-inner-list li i {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background: #ff3c00;
+  background: #34bd6b;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -6667,7 +6667,7 @@ ul.tabs-inner-list li i {
 }
 
 .catagory-item ul li:hover a {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .upp.widget-items {
@@ -6695,7 +6695,7 @@ ul.tabs-inner-list li i {
 }
 
 .rpost-title h4:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*tag menu*/
@@ -6712,7 +6712,7 @@ ul.tabs-inner-list li i {
 
 .tag-item a:hover {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 /* Calender*/
@@ -6822,7 +6822,7 @@ element.style {
 }
 
 .blog-meta span a:hover {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*quote*/
@@ -6830,7 +6830,7 @@ element.style {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 25px;
   border-radius: 5px;
-  border-left: 4px solid #ff3c00;
+  border-left: 4px solid #34bd6b;
   margin: 30px 0;
 }
 
@@ -6876,7 +6876,7 @@ element.style {
 
 .single-blog-social-icon ul li:hover i {
   color: #fff;
-  background: #ff3c00;
+  background: #34bd6b;
 }
 
 .comment-box {
@@ -6905,7 +6905,7 @@ label {
 
 .comment-box:focus,
 #comment-msg-box:focus {
-  border-color: #ff3c00;
+  border-color: #34bd6b;
   outline: 0;
   box-shadow: 0 0 6px rgb(204, 48, 0, 0.6);
 }
@@ -6913,8 +6913,8 @@ label {
 /*form button*/
 .comment-form .submit-comment {
   color: #fff;
-  background: #ff3c00;
-  border: 1px solid #ff3c00;
+  background: #34bd6b;
+  border: 1px solid #34bd6b;
   border-radius: 3px;
   padding: 13px 35px;
   margin-left: 15px;
@@ -6924,8 +6924,8 @@ label {
 
 .comment-form .submit-comment {
   color: #fff;
-  background: #ff3c00;
-  border: 1px solid #ff3c00;
+  background: #34bd6b;
+  border: 1px solid #34bd6b;
   border-radius: 3px;
   padding: 13px 35px;
   margin-left: 15px;
@@ -6934,7 +6934,7 @@ label {
 
 .comment-form .submit-comment:hover {
   background: #fff;
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 /*======================================
@@ -6985,7 +6985,7 @@ label {
   width: 35px;
   line-height: 35px;
   text-align: center;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -7146,10 +7146,10 @@ label {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #fff;
-  background: #ff3b00;
+  background: #34bd6b;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #ff3b00;
+  border: 1px solid #34bd6b;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -7223,7 +7223,7 @@ label {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #ff3c00;
+  background: #34bd6b;
   border-radius: 50%;
   transition: 0.5s;
   transform: scale(0);
@@ -7300,7 +7300,7 @@ label {
 }
 
 .close-side-widget i {
-  color: #ff3c00;
+  color: #34bd6b;
   font-size: 28px;
   display: block;
 }
@@ -7339,7 +7339,7 @@ label {
 }
 
 .xs-bg-black {
-  background-color: #ff3c00;
+  background-color: #34bd6b;
 }
 
 /*html css*/
@@ -7365,7 +7365,7 @@ a.theme-btn.btn-style-two span {
 }
 
 a.theme-btn.btn-style-two i {
-  color: #ff3c00;
+  color: #34bd6b;
 }
 
 .contact-info h2 {
@@ -7387,7 +7387,7 @@ ul.list-style-one li {
 ul.list-style-one li span {
   font-size: 20px;
   font-weight: 600;
-  color: #ff3c00;
+  color: #34bd6b;
   margin: 0 10px 0 0px;
 }
 
@@ -7408,14 +7408,14 @@ ul.social-box li a {
   line-height: 36px;
   text-align: center;
   background: #fff;
-  color: #ff3c00;
+  color: #34bd6b;
   transition: 0.5s;
   font-size: 18px;
   border-radius: 3px;
 }
 
 ul.social-box li a:hover {
-  background: #ff3c00;
+  background: #34bd6b;
   color: #fff;
 }
 
@@ -7446,7 +7446,7 @@ ul.social-box li a:hover {
   border-radius: 50%;
   transition: all 1s 1s ease;
   border: 3px solid transparent;
-  border-top-color: #9a241c;
+  border-top-color: #34bd6b;
   -webkit-animation: spin 1.5s linear infinite;
   -moz-animation: spin 1.5s linear infinite;
   -o-animation: spin 1.5s linear infinite;
@@ -7462,7 +7462,7 @@ ul.social-box li a:hover {
   bottom: 6px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-left-color: #ff3c00;
+  border-left-color: #34bd6b;
   -webkit-animation: spin 2s linear infinite;
   -moz-animation: spin 2s linear infinite;
   -o-animation: spin 2s linear infinite;
