@@ -159,6 +159,14 @@ The government of Lucknow intends to create about 600,000 square feet of space s
       ],
     },
   },
+  {
+    name: 'rav-residency',
+    image: '../assets/images/home/project/Rav-residency.jpg',
+  },
+  {
+    name: 'ramyodha-farmhouses',
+    image: '../assets/images/home/project/ayodhya.jpg',
+  },
 ];
 
 const ProjectDetails = () => {
@@ -176,131 +184,117 @@ const ProjectDetails = () => {
       <div className="service-details-area">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-12">
-              <div className="row">
-                {/* Display About Content */}
-                <div className="col-lg-12 col-sm-12">
-                  <div className="consen-service-details-box">
-                    <div className="consen-service-thumb services-images">
-                      <img
-                        src={service.details.about.image}
-                        alt="Service Thumbnail"
-                      />
+            {service.details ? (
+              <>
+                <div className="col-lg-8 col-md-12">
+                  <div className="row">
+                    {/* Display About Content */}
+                    <div className="col-lg-12 col-sm-12">
+                      <div className="consen-service-details-box">
+                        <div className="consen-service-thumb services-images">
+                          <img
+                            src={service?.details.about.image}
+                            alt="Service Thumbnail"
+                          />
+                        </div>
+                        <div className="service-details-content">
+                          <div className="service-page-title">
+                            <h1>{service?.details.about.title}</h1>
+                          </div>
+                          <div className="serivce-details-desc">
+                            <p>{service?.details.about.description}</p>
+                            {service?.details.about.description2 && (
+                              <p>{service?.details.about.description2}</p>
+                            )}
+                            {service?.details.about.description3 && (
+                              <p>{service?.details.about.description3}</p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-12">
+                  <SideCat servicesData={servicesData} />
+                  {/* <div className="widget-categories-box">
+                    <div className="categories-title">
+                      <h4>Category</h4>
+                    </div>
+                    <div className="widget-categories-menu">
+                      <ul>
+                        {servicesData.map((item, index) => (
+                          <li key={index}>
+                            <Link
+                              legacyBehavior
+                              href={`/projects/${item.name
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}`}
+                            >
+                              <a>
+                                {item.name.charAt(0).toUpperCase() +
+                                  item.name.slice(1)}
+                              </a>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div> */}
+                  <div className="mt-5">
                     <div className="service-details-content">
-                      <div className="service-page-title">
-                        <h1>{service.details.about.title}</h1>
+                      <div className="service-page-title2">
+                        <h1>What You Benefit</h1>
                       </div>
-                      <div className="serivce-details-desc">
-                        <p>{service.details.about.description}</p>
-                        {service.details.about.description2 && (
-                          <p>{service.details.about.description2}</p>
-                        )}
-                        {service.details.about.description3 && (
-                          <p>{service.details.about.description3}</p>
-                        )}
+                      <div className="widget-service-details-icon">
+                        {service?.details.benefits.map((benefit, index) => (
+                          <p key={index}>
+                            <i className="bi bi-check-lg" />{' '}
+                            <span>{benefit}</span>
+                          </p>
+                        ))}
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Display Plots */}
-
-                {/* Display Benefits */}
-                {/* <div className="col-lg-12 mb-5">
-                  <div className="service-details-content">
-                    <div className="service-page-title2">
-                      <h1>What You Benefit</h1>
-                    </div>
-                    <div className="widget-service-details-icon">
-                      {service.details.benefits.map((benefit, index) => (
-                        <p key={index}>
-                          <i className="bi bi-check-lg" />{' '}
-                          <span>{benefit}</span>
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="col-lg-4 col-md-12">
-              {/* <div className="widget_search mt-5 mt-lg-0">
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  action="#"
-                  method="get"
-                >
-                  <input
-                    type="text"
-                    name="s"
-                    placeholder="Search Here"
-                    title="Search for:"
-                  />
-                  <button type="submit" className="icons">
-                    <i className="fa fa-search" />
-                  </button>
-                </form>
-              </div> */}
-              <div className="widget-categories-box">
-                <div className="categories-title">
-                  <h4>Category</h4>
-                </div>
-                <div className="widget-categories-menu">
-                  <ul>
-                    {servicesData.map((item, index) => (
-                      <li key={index}>
-                        <Link
-                          legacyBehavior
-                          href={`/projects/${item.name
-                            .toLowerCase()
-                            .replace(/\s+/g, '-')}`}
-                        >
-                          <a>
-                            {item.name.charAt(0).toUpperCase() +
-                              item.name.slice(1)}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-5">
-                <div className="service-details-content">
-                  <div className="service-page-title2">
-                    <h1>What You Benefit</h1>
-                  </div>
-                  <div className="widget-service-details-icon">
-                    {service.details.benefits.map((benefit, index) => (
-                      <p key={index}>
-                        <i className="bi bi-check-lg" /> <span>{benefit}</span>
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 d-flex flex-wrap mb-5">
-              {service.details.images.map((plot, index) => (
-                <div className="col-lg-4 col-sm-12 px-sm-0" key={index}>
-                  <div className="p-md-2 mb-2 d-flex flex-column ">
-                    <div className="project-images">
-                      <img src={plot} alt="Icon" />
-                    </div>
-                    {/* <div className="service-details-title">
+                <div className="col-12 d-flex flex-wrap mb-5">
+                  {service?.details.images.map((plot, index) => (
+                    <div className="col-lg-4 col-sm-12 px-sm-0" key={index}>
+                      <div className="p-md-2 mb-2 d-flex flex-column ">
+                        <div className="project-images">
+                          <img src={plot} alt="Icon" />
+                        </div>
+                        {/* <div className="service-details-title">
                       <h4>{plot.location}</h4>
                     </div>
                     <div className="services-detials-desc">
                       <p>{plot.description}</p>
                     </div> */}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="project-images d-flex">
+                <div className="col-lg-8 col-md-12">
+                  <div className="project-images">
+                    <a
+                      href={service.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={service.image} alt="Icon" />
+                    </a>
                   </div>
                 </div>
-              ))}
-            </div>
+                <div className="col-lg-4 col-md-12">
+                  <SideCat servicesData={servicesData} />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -308,4 +302,29 @@ const ProjectDetails = () => {
   );
 };
 
+const SideCat = ({ servicesData }) => {
+  return (
+    <div className="widget-categories-box">
+      <div className="categories-title">
+        <h4>Category</h4>
+      </div>
+      <div className="widget-categories-menu">
+        <ul>
+          {servicesData.map((item, index) => (
+            <li key={index}>
+              <Link
+                legacyBehavior
+                href={`/projects/${item.name
+                  .toLowerCase()
+                  .replace(/\s+/g, '-')}`}
+              >
+                <a>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
 export default ProjectDetails;
