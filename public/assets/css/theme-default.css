@@ -235,20 +235,20 @@ em {
 }
 
 *::-moz-selection {
-  background: #4fc1f0;
-  color: #454545;
+  background: #34bd6b;
+  color: #ffff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #4fc1f0;
-  color: #454545;
-  text-shadow: none;
+  background: #34bd6b;
+  color: #ffff;
+  text-shadow: none;;
 }
 
 ::selection {
-  background: #4fc1f0;
-  color: #454545;
+  background: #34bd6b;
+  color: #ffff;
   text-shadow: none;
 }
 

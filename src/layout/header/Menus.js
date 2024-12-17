@@ -106,22 +106,41 @@ export const DaskTopMenusMenus = () => {
         <a href="/service">
           Services{' '}
           <span>
-            <i className="fas" />
+            <i className="fas fa-angle-down" />
           </span>
         </a>
-        {/* <ul className="sub-menu">
-          {' '}
+        <ul className="sub-menu">
           <li>
-            <Link legacyBehavior href="service">
-              Our Service
-            </Link>
-          </li>{' '}
-          <li>
-            <Link legacyBehavior href="service-details">
-              Service Details
+            <Link legacyBehavior href="/services/business-consulting">
+              Business Consulting
             </Link>
           </li>
-        </ul> */}
+          <li>
+            <Link legacyBehavior href="/services/organic-farming">
+              Organic Farming
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/services/river-castle">
+              River Castle
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/services/investment">
+              Investment
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/services/information-technology">
+              Information Technology
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/services/media">
+              Media
+            </Link>
+          </li>
+        </ul>
       </li>{' '}
       {/* <li>
         <Link legacyBehavior href="portfolio">
@@ -135,6 +154,7 @@ export const DaskTopMenusMenus = () => {
             <i className="fas" />
           </span>
         </Link>
+
         {/* <ul className="sub-menu">
           {' '}
           <li>
@@ -158,6 +178,11 @@ export const DaskTopMenusMenus = () => {
             </Link>
           </li>
         </ul> */}
+      </li>{' '}
+      <li>
+        <Link legacyBehavior href="/gallery">
+          Gallery
+        </Link>
       </li>{' '}
       {isSmallScreen ? (
         <li>

@@ -76,6 +76,30 @@ export const servicesData = [
     image: 'assets/images/resource/castle.png',
     link: 'services/river-castle',
   },
+  {
+    title: 'Investment',
+    sub: 'Profit',
+    description:
+      'We provide the best investment opportunities with tailored solutions...',
+    image: 'assets/images/resource/financial-growth.png',
+    link: 'services/investment',
+  },
+  {
+    title: 'Information Technology',
+    sub: 'IT',
+    description:
+      'Our Information Technology services offer cutting-edge solutions tailored...',
+    image: 'assets/images/resource/system.png',
+    link: 'services/information-technology',
+  },
+  {
+    title: 'Media',
+    sub: 'Marketing',
+    description:
+      'Our Media services encompass comprehensive marketing strategies...',
+    image: 'assets/images/resource/digital-marketing.png',
+    link: 'services/media',
+  },
 ];
 
 const Index = () => {
@@ -91,13 +115,16 @@ const Index = () => {
               <div className="slider-content">
                 <h3>Invest with RAV </h3>
                 <h1>
-                  Invest with <span>confidence</span> and <span>vision</span>.
+                  Invest with <span>100% Security</span>,
+                  <span>Transperency</span> and
+                  <span> Vision</span>.
                 </h1>
                 <p>
                   {' '}
-                  Unlock the door to exceptional real estate opportunities,
-                  where luxury meets innovation. Join us in shaping tomorrow's
-                  landmarks today.
+                  Unlock the door to theme based real estate opportunities,
+                  where luxury meets innovation, spiritual, nature and
+                  unexplored location. Join us in shaping tomorrow's landmarks
+                  today.
                 </p>
               </div>
               <div className="lines pt-20 pb-40">
@@ -130,7 +157,7 @@ const Index = () => {
               <div className="slider-thumb">
                 <img src="assets/images/home/hero-img.png" alt />
               </div>
-              <div className="video-icon">
+              {/* <div className="video-icon">
                 <a
                   className="video-vemo-icon venobox vbox-item"
                   data-vbtype="youtube"
@@ -139,7 +166,7 @@ const Index = () => {
                 >
                   <i className="fa fa-play" />
                 </a>
-              </div>
+              </div> */}
             </div>
             {/* slider shape */}
             <div className="slider-shape">
@@ -182,8 +209,8 @@ const Index = () => {
           </div>
 
           <div className="row">
-            {servicesData.map((service, index) => (
-              <div key={index} className="col-lg-4 col-sm-6 p-0">
+            {servicesData.slice(0, 4).map((service, index) => (
+              <div key={index} className="col-lg-3 col-sm-6 p-0">
                 <div className="dreamit-service-box">
                   <div className="service-box-inner">
                     <div className="em-service-icon">
@@ -237,13 +264,15 @@ const Index = () => {
               <div className="consen-section-title white pb-10">
                 <h2>Your Journey to Unmatched</h2>
                 <h2>
-                  Business <span>Success</span> Begins Here
+                  Business <span>Success</span> Begins Here since
+                  <span> 2012</span>
                 </h2>
                 <p>
                   For over a decade, we’ve been crafting stories of trust,
                   innovation, and excellence. From humble beginnings to
                   groundbreaking milestones, our journey reflects our commitment
-                  to building a brighter future for every client we serve.
+                  to building a brighter future for every client we serve and we
+                  are working only for investor.
                 </p>
               </div>
               <div className="lines style-two pb-15">
@@ -251,7 +280,7 @@ const Index = () => {
               </div>
               <div className="dreamit-icon-title">
                 <h4>
-                  Empowering Dreams <span>Since 2007</span>
+                  Empowering Dreams <span>Since 2012</span>
                 </h4>
               </div>
               <div className="dreamit-icon-list">
@@ -774,11 +803,13 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        Gathering <span> Information </span>
+                        Gathering{' '}
+                        <span> Information with Government Reasearch</span>
                       </h3>
                       <p>
-                        Understanding your needs helps us grow together,
-                        ensuring mutual success.
+                        Understanding exact policy of government and utilize
+                        unawared policy with proper master plan and ready for
+                        action.
                       </p>
                     </div>
                   </div>
@@ -793,8 +824,12 @@ const Index = () => {
                         Professional <span> Advisors </span>
                       </h3>
                       <p>
-                        Expert guidance to navigate your challenges and uncover
-                        opportunities.
+                        Expert guidance to recognize and navigate your
+                        challenges and uncover opportunities like - Short term
+                        investment, rental, legacy, vision investment,
+                        unexplored theme based commercial, ultra luxury
+                        lifestyle with nature business opportunty without
+                        involvement
                       </p>
                     </div>
                   </div>
@@ -806,7 +841,7 @@ const Index = () => {
                     </div>
                     <div className="process-title">
                       <h3>
-                        Analyze <span> Your Business </span>
+                        Analyze <span> Your Actual Need </span>
                       </h3>
                       <p>
                         Transform challenges into actionable strategies for
@@ -845,7 +880,7 @@ const Index = () => {
               <div className="consen-section-title mt-4 mt-lg-0">
                 <h2>
                   Let's Turn Your <span>Dreams</span> Into Reality – Together,
-                  We’ll Build a <span>Future</span> That Matters
+                  We’ll Build a <span>Secure Future</span> That Matters
                 </h2>
               </div>
               <div className="lines style-three pt-30 pb-10">

@@ -120,6 +120,9 @@ const Footer1 = () => {
                         The River Castle
                       </Link>
                     </li>
+                    <li>
+                      <Link href="/services/investment">Investment</Link>
+                    </li>
                     {/* <li>
                       <a href="#">Corporate Finance</a>
                     </li>

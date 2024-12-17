@@ -17,7 +17,7 @@ const Testimonial = () => {
             <div className="col-6">
               <div className="testi-counter-box upper">
                 <div className="testi-counter-title">
-                  <h3 className="counter"> 1,372 </h3>
+                  <h3 className="counter"> 12,758 </h3>
                   <span>+</span>
                   <p> Happy Customers </p>
                 </div>

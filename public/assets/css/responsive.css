@@ -1175,6 +1175,7 @@
 
     .britcam-shape {
         width: 45%;
+        height: 66px;
     }
 
     .tabs li {
@@ -1962,6 +1963,7 @@
 
     .britcam-shape {
         display: none;
+        height: 66px;
     }
 
     .counter-title h4 {
@@ -2932,6 +2934,7 @@
 
     .britcam-shape {
         display: none;
+        height: 66px;
     }
 
     .style-two.feature-area p.about-text1 {
@@ -4236,10 +4239,11 @@
 
     .britcam-shape {
         display: none;
+        height: 66px;
     }
 
     .breadcumb-content h1 {
-        font-size: 32px;
+        font-size: 20px;
         font-weight: 600;
     }
 
@@ -4274,6 +4278,12 @@
 
     .blog-section {
         padding: 80px 0 45px;
+    }
+    .blog-img {
+        margin: 0 auto !important;
+        width: 300px !important;
+        height: 200px !important;
+    
     }
 
 
@@ -4551,4 +4561,13 @@
     .video-icon {
         left: 75%;
     }
+}
+@media only screen and (max-width:1380px) {
+    .britcam-shape {
+        height: 66px !important;
+    }
+}
+.slider-content h1 {
+ 
+    line-height: 1.25;
 }

@@ -7,19 +7,19 @@ const ProgressBar = () => {
           <span
             className="tip"
             style={{
-              left: '85%',
+              left: '100%',
               transition: 'left 7s ease-in-out 0s',
             }}
           >
-            85%
+            100%
           </span>
         </div>
         <span
           className="fill"
-          data-percentage={85}
+          data-percentage={100}
           style={{
             background: 'rgb(22, 181, 151)',
-            width: '85%',
+            width: '100%',
             transition: 'width 7s ease-in-out 0s',
           }}
         />
@@ -30,19 +30,19 @@ const ProgressBar = () => {
           <span
             className="tip"
             style={{
-              left: '90%',
+              left: '100%',
               transition: 'left 7s ease-in-out 0s',
             }}
           >
-            90%
+            100%
           </span>
         </div>
         <span
           className="fill my-class"
-          data-percentage={90}
+          data-percentage={100}
           style={{
             background: 'rgb(22, 181, 151)',
-            width: '90%',
+            width: '100%',
             transition: 'width 7s ease-in-out 0s',
           }}
         />
@@ -53,19 +53,19 @@ const ProgressBar = () => {
           <span
             className="tip"
             style={{
-              left: '75%',
+              left: '100%',
               transition: 'left 7s ease-in-out 0s',
             }}
           >
-            95%
+            100%
           </span>
         </div>
         <span
           className="fill my-class2"
-          data-percentage={95}
+          data-percentage={100}
           style={{
             background: 'rgb(22, 181, 151)',
-            width: '95%',
+            width: '100%',
             transition: 'width 7s ease-in-out 0s',
           }}
         />

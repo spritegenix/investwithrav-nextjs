@@ -24,8 +24,8 @@ const Breadcumb = ({ pageName }) => {
                 </li>
                 <li>
                   {' '}
-                  {pageName.substring(0, 28) +
-                    `${pageName.length > 28 ? '... ' : ''}`}{' '}
+                  {pageName?.substring(0, 28) +
+                    `${pageName?.length > 28 ? '... ' : ''}`}{' '}
                 </li>
               </ul>
             </div>

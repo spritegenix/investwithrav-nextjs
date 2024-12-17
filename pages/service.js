@@ -41,7 +41,7 @@ const Service = () => {
           </div>
           <div className="row">
             {servicesData.map((item) => (
-              <div className="col-lg-4 col-sm-6 p-0">
+              <div className="col-lg-4 col-sm-6 p-0 mb-5">
                 <div className="dreamit-service-box">
                   <div className="service-box-inner">
                     <div className="em-service-icon">

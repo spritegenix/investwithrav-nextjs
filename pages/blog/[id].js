@@ -50,7 +50,7 @@ const BlogDetails = () => {
   const filteredData = blogPosts.find((item) => item.name === id);
   return (
     <Layout>
-      <Breadcumb pageName={filteredData.title} />
+      <Breadcumb pageName={filteredData?.title} />
 
       <div className="blog-section style-two details">
         <div className="container">
@@ -62,21 +62,21 @@ const BlogDetails = () => {
                 style={{ width: '730px', height: '493px' }}
               >
                 <img
-                  src={filteredData.image}
-                  alt={filteredData.title}
+                  src={filteredData?.image}
+                  alt={filteredData?.title}
                   style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                 />
               </div>
               {/* Blog Content */}
               <div className="blog-content">
-                <h5>{filteredData.title}</h5>
+                <h5>{filteredData?.title}</h5>
                 <div className="blog-meta">
-                  <span>By {filteredData.author}</span> -{' '}
-                  {/* <span>{filteredData.date}</span> -{' '} */}
-                  <span>{filteredData.comments} Comments</span>
+                  <span>By {filteredData?.author}</span> -{' '}
+                  {/* <span>{filteredData?.date}</span> -{' '} */}
+                  <span>{filteredData?.comments} Comments</span>
                 </div>
                 <p
-                  dangerouslySetInnerHTML={{ __html: filteredData.content }}
+                  dangerouslySetInnerHTML={{ __html: filteredData?.content }}
                 ></p>
               </div>
 

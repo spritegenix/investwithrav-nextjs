@@ -20,8 +20,8 @@ const MobileMenu = () => {
     <div className="mobile-menu-area d-sm-block d-md-block d-lg-none header____">
       <div className="mobile-menu mean-container">
         <div className="mean-bar">
-          <div className="my-auto position-absolute pt-2 pl-2">
-            <img src="../assets/images/home/logo2.png" alt="" />
+          <div className="position-absolute pt-2 pl-2 mobile-logos">
+            <img src="../assets/images/home/logoblack.png" alt="" />
           </div>
           <a
             href="#nav"
@@ -75,7 +75,7 @@ const MobileMenu = () => {
                 </a> */}
               </li>
               <li>
-                <Link legacyBehavior href="about">
+                <Link legacyBehavior href="/about">
                   About Us
                 </Link>
                 {/* <ul className="sub-menu" style={activeLi('Company')}>
@@ -130,18 +130,41 @@ const MobileMenu = () => {
                 </a> */}
               </li>
               <li>
-                <Link legacyBehavior href="service">
+                <Link legacyBehavior href="/service">
                   Our Service
                 </Link>
-                {/* <ul className="sub-menu" style={activeLi('Services')}>
+                <ul className="sub-menu" style={activeLi('Services')}>
                   <li>
-                    <Link legacyBehavior href="service">
-                      Our Service
+                    <Link legacyBehavior href="/services/business-consulting">
+                      Business Consulting
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="service-details">
-                      Service Details
+                    <Link legacyBehavior href="/services/organic-farming">
+                      Organic Farming
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="/services/river-castle">
+                      River Castle
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="/services/investment">
+                      Investment
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      legacyBehavior
+                      href="/services/information-technology"
+                    >
+                      Information Technology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="/services/media">
+                      Media
                     </Link>
                   </li>
                 </ul>
@@ -152,7 +175,7 @@ const MobileMenu = () => {
                   style={{ fontSize: 18 }}
                 >
                   {activeBtn('Services')}
-                </a> */}
+                </a>
               </li>
               {/* <li>
                 <Link legacyBehavior href="portfolio">
@@ -160,7 +183,7 @@ const MobileMenu = () => {
                 </Link>
               </li> */}
               <li>
-                <Link legacyBehavior href="blog-grid">
+                <Link legacyBehavior href="/blog-grid">
                   Blog
                 </Link>
                 {/* <ul className="sub-menu" style={activeLi('Portfolio')}>
@@ -195,7 +218,7 @@ const MobileMenu = () => {
                 </a> */}
               </li>
               <li className="mean-last">
-                <Link legacyBehavior href="contact">
+                <Link legacyBehavior href="/contact">
                   Contact
                 </Link>
               </li>

@@ -4,13 +4,14 @@ import Faqs from '@/src/components/Faqs';
 import LogoSlider from '@/src/components/LogoSlider';
 import Testimonial from '@/src/components/Testimonial';
 import Layout from '@/src/layout/Layout';
+import { brandListProps, caseStudyProps } from '@/src/sliderProps';
 import { testimonial_list_slider } from '@/src/sliderProps';
 import Link from 'next/link';
 import { Nav, Tab } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 export const testimonials = [
   {
-    name: 'Amit Kumar',
+    name: 'Pankaj Gupta',
     position: 'Real Estate Developer',
     image: 'assets/images/resource/testi1.png',
     testimonial:
@@ -18,7 +19,7 @@ export const testimonials = [
     rating: 4.5,
   },
   {
-    name: 'Priya Sharma',
+    name: 'Aman Kumar Garg',
     position: 'Investment Advisor',
     image: 'assets/images/resource/testi2.png',
     testimonial:
@@ -26,7 +27,7 @@ export const testimonials = [
     rating: 5,
   },
   {
-    name: 'Rajesh Gupta',
+    name: 'Geriv ul-haque',
     position: 'Business Entrepreneur',
     image: 'assets/images/resource/testi3.png',
     testimonial:
@@ -34,7 +35,7 @@ export const testimonials = [
     rating: 4.8,
   },
   {
-    name: 'Neha Singh',
+    name: 'Amit Goldie',
     position: 'Real Estate Investor',
     image: 'assets/images/resource/testi4.png',
     testimonial:
@@ -42,7 +43,7 @@ export const testimonials = [
     rating: 5,
   },
   {
-    name: 'Vikas Mehta',
+    name: 'Arvind Kumar',
     position: 'Real Estate Consultant',
     image: 'assets/images/resource/testi5.png',
     testimonial:
@@ -50,7 +51,7 @@ export const testimonials = [
     rating: 5,
   },
   {
-    name: 'Sanya Kapoor',
+    name: 'Satya Dev Rai',
     position: 'Hospitality Manager',
     image: 'assets/images/resource/testi6.png',
     testimonial:
@@ -58,7 +59,7 @@ export const testimonials = [
     rating: 4.7,
   },
   {
-    name: 'Anil Joshi',
+    name: 'Aman Agarwal',
     position: 'Project Manager',
     image: 'assets/images/resource/testi7.png',
     testimonial:
@@ -162,7 +163,7 @@ const About = () => {
               <div className="consen-section-title">
                 <h5> About Us </h5>
                 <h2>
-                  We Are A Pioneering Force In <span> Real Estate </span>
+                  We Are A Pioneer In <span> Real Estate </span>
                 </h2>
                 <p className="about-text1">
                   Invest with Rav (IWR) is a trailblazer in the Real Estate
@@ -224,26 +225,29 @@ const About = () => {
                           <i className="fas fa-check" />
                           <span>
                             Investing in farmhouses, villas, and
-                            residential/commercial projects.
+                            residential/commercial projects only in State and
+                            National highways.
                           </span>
                         </li>
                         <li>
                           <i className="fas fa-check" />
                           <span>
-                            Leading the way in real estate development.
+                            Leading the way in real estate development with
+                            Gated Society.
                           </span>
                         </li>
                         <li>
                           <i className="fas fa-check" />
                           <span>
-                            Providing high-quality residential solutions.
+                            Providing high-quality residential solutions with
+                            Luxury Amenities.
                           </span>
                         </li>
                         <li>
                           <i className="fas fa-check" />
                           <span>
-                            Enhancing lifestyle through luxurious real estate
-                            offerings.
+                            Enhancing lifestyle through luxurious and peacfull
+                            real estate offerings.
                           </span>
                         </li>
                         <li>
@@ -320,8 +324,8 @@ const About = () => {
                         <li>
                           <i className="fas fa-check" />
                           <span>
-                            Building a legacy of excellence in multiple
-                            industries.
+                            Building a legacy of excellence with river front and
+                            unparalleled nature.
                           </span>
                         </li>
                         <li>
@@ -344,6 +348,275 @@ const About = () => {
         </div>
       </div>
 
+      {/* <div className="case-study-area">
+        <div className="container">
+          <div className="row case-study-bg align-items-center mb-40">
+            <div className="col-lg-12">
+              <div className="consen-section-title mobile-center white ">
+                <h2>Our Journey</h2>
+              </div>
+
+            </div>
+            <div className="case-study-shape">
+              <div className="case-shape-thumb bounce-animate4">
+                <img src="assets/images/resource/red-dot.png" alt />
+              </div>
+              <div className="case-shape-thumb1 bounce-animate2">
+                <img src="assets/images/resource/all-shape.png" alt />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <Swiper {...caseStudyProps} className="case-study owl-carousel">
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case2.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Consulting for Business Organizations</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case3.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Strategy and Planning Building Idea</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case1.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Corporate Finance for helpfulness Markets</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case2.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Consulting for Business Organizations</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case3.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Strategy and Planning Building Idea</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case2.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a> Consulting for Business Organizations</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="case-study-single-box">
+                  <div className="case-study-thumb">
+                    <img src="assets/images/project/case3.png" alt />
+                    <div className="case-study-content">
+                      <div className="case-study-title">
+                        <h6> Consulting </h6>
+                        <h3>
+                          {' '}
+                          <Link legacyBehavior href="/portfolio-details">
+                            <a>Strategy and Planning Building Idea</a>
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="case-button">
+                        <Link legacyBehavior href="/portfolio-details">
+                          <a>
+                            Read More <i className="bi bi-plus" />{' '}
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="video-icon style-two">
+                      <a
+                        className="video-vemo-icon venobox vbox-item"
+                        data-vbtype="youtube"
+                        data-autoplay="true"
+                        href="https://youtu.be/BS4TUd7FJSg"
+                      >
+                        <i className="fa fa-play" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </div> */}
       {/*==================================================*/}
       {/* Start consen Testimonial Area */}
       {/*==================================================*/}

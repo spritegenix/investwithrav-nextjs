@@ -12,36 +12,42 @@ const servicesData = [
           description:
             'We provide the best service for high-level success in your business.',
           image: '../assets/images/home/plots/dholera.jpg',
+          href: '/projects/dholera-smart-city',
         },
         {
           location: 'Awadh City',
           description:
             'We provide the best service for high-level success in your business.',
           image: '../assets/images/home/plots/awadh.jpg',
+          href: '/projects/awadh-city',
         },
         {
           location: 'Highway County',
           description:
             'We provide the best service for high-level success in your business.',
           image: '../assets/images/home/plots/highway.jpg',
+          href: '/projects/highway-county',
         },
         {
           location: 'Gomti Greens & Cottages',
           description:
             'We provide the best service for high-level success in your business.',
           image: '../assets/images/home/plots/main.jpg',
+          href: '/projects/gomti-greens',
         },
         {
           location: 'RAV Residency',
           description:
             'We provide the best service for high-level success in your business.',
           image: '../assets/images/home/plots/rav-residency.jpg',
+          href: '/projects/rav-residency',
         },
         {
           location: 'Ramyodha Farmhouses and Plots (Ayodhya)',
           description:
             'We provide the best service for high-level success in your business and pass the data.',
           image: '../assets/images/home/plots/rav1.jpg',
+          href: '/projects/ramyodha-farmhouses',
         },
       ],
       about: {
@@ -138,6 +144,62 @@ const servicesData = [
       ],
     },
   },
+  {
+    name: 'investment',
+    details: {
+      about: {
+        title: 'Invest with Us',
+        description:
+          'Understanding client demands and providing tailored solutions is the primary focus of RAV Group. We believe that the most crucial aspect of our business is our clients. Our investment strategy guarantees the highest yield possible by leveraging market demands, risk reduction, and practical expertise. RAV Group combines years of experience with market insights to ensure secure, profitable, and future-ready investments. Whether it’s real estate, agriculture, or partnerships, we prioritize delivering the best returns with minimized risks and long-term value for our clients.',
+        image: '../assets/images/home/plots/invest.jpg',
+      },
+      benefits: [
+        'Robust market demand and comprehensive research support',
+        'Advisory backed by 10 years of experience in Indian real estate and agriculture',
+        'High-yield opportunities in agriculture, real estate, and hospitality sectors',
+        'Flexible investment options: Monthly, yearly, and long-term income plans',
+        'Risk reduction strategies to maximize returns efficiently',
+      ],
+      plot: [
+        {
+          location: 'Agro Investment Plans',
+          description:
+            'We offer the best opportunities in agriculture, including multi-layer organic farming. Enjoy returns ranging from 8% to 15%, backed by modern farming technologies and expert management.',
+          image: '../assets/images/home/plots/organic-farm.jpg',
+        },
+        {
+          location: 'Project Partnerships',
+          description:
+            'Maximize profits by partnering in our exclusive projects with profit-sharing options of up to 30%. Investment starts from INR 1 crore and above, ensuring premium opportunities for high-value investors.',
+          image: '../assets/images/home/plots/partner.jpg',
+        },
+        {
+          location: 'Rental Income Plans',
+          description:
+            'Earn consistent rental income from farmhouses, commercial properties, and organic farmland. Our properties are carefully chosen for maximum occupancy and return.',
+          image: '../assets/images/home/plots/monthly.jpg',
+        },
+        {
+          location: 'Monthly Income Options',
+          description:
+            'Secure fixed monthly returns ranging from 8% to 10%, ideal for investors seeking steady and predictable income streams.',
+          image: '../assets/images/home/plots/incomes.jpg',
+        },
+        {
+          location: 'Long-Term Investment Plans',
+          description:
+            'Discover India’s most promising investment locations with opportunities to multiply your investment 100 times over. We focus on prime land and growth-ready projects.',
+          image: '../assets/images/home/plots/longterm.jpg',
+        },
+        {
+          location: 'Generation Income',
+          description:
+            'Invest in projects that secure generational wealth with sustainable and high-value returns. Our investments are tailored for long-term financial prosperity.',
+          image: '../assets/images/home/plots/generation.webp',
+        },
+      ],
+    },
+  },
 ];
 
 const ServiceDetails = () => {
@@ -145,10 +207,13 @@ const ServiceDetails = () => {
 
   const { id } = router.query;
   const service = servicesData.find((item) => item.name === id);
-
+  const newName = service?.name
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
   return (
     <Layout>
-      <Breadcumb pageName={'Service Details'} />
+      <Breadcumb pageName={newName} />
       <div className="service-details-area">
         <div className="container">
           <div className="row">
@@ -179,15 +244,33 @@ const ServiceDetails = () => {
                 {service.details.plot.map((plot, index) => (
                   <div className="col-lg-6 col-sm-6" key={index}>
                     <div className="service-details-box">
-                      <div className="service-details-icon plots-images">
-                        <img src={plot.image} alt="Icon" />
-                      </div>
-                      <div className="service-details-title">
-                        <h4>{plot.location}</h4>
-                      </div>
-                      <div className="services-detials-desc">
-                        <p>{plot.description}</p>
-                      </div>
+                      {plot.href ? (
+                        <Link href={plot.href}>
+                          <div className="service-details-icon plots-images">
+                            <img src={plot.image} alt="Icon" />
+                          </div>
+                          <div className="service-details-title">
+                            <h4>{plot.location}</h4>
+                          </div>
+                          <div className="services-detials-desc">
+                            <p style={{ color: '#686868' }}>
+                              {plot.description}
+                            </p>
+                          </div>
+                        </Link>
+                      ) : (
+                        <>
+                          <div className="service-details-icon plots-images">
+                            <img src={plot.image} alt="Icon" />
+                          </div>
+                          <div className="service-details-title">
+                            <h4>{plot.location}</h4>
+                          </div>
+                          <div className="services-detials-desc">
+                            <p>{plot.description}</p>
+                          </div>
+                        </>
+                      )}
                     </div>
                   </div>
                 ))}
