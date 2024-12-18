@@ -200,6 +200,94 @@ const servicesData = [
       ],
     },
   },
+  {
+    name: 'information-technology',
+    details: {
+      about: {
+        title: 'Innovate with IT Solutions',
+        description:
+          'RAV Group specializes in delivering state-of-the-art IT services designed to empower businesses. Our offerings include software development, IT consulting, and infrastructure management, helping clients streamline operations and achieve growth. With a focus on security, scalability, and efficiency, we provide solutions tailored to meet specific industry requirements. From startups to enterprises, our expertise ensures the best results in the rapidly evolving tech landscape.',
+        image: '../assets/images/home/plots/it.webp',
+      },
+      benefits: [
+        'Custom software solutions to address unique business needs',
+        'Expert IT consulting and strategy planning for growth',
+        'Secure and scalable infrastructure management',
+        'Over a decade of experience in IT development and support',
+        'Flexible service models: project-based or long-term partnerships',
+      ],
+      plot: [
+        {
+          location: 'Custom Software Development',
+          description:
+            'We create robust, scalable, and efficient software tailored to your business goals, ensuring a seamless user experience and high performance.',
+          image: '../assets/images/home/plots/software.webp',
+        },
+        {
+          location: 'Cloud Solutions',
+          description:
+            'Optimize your business with secure and efficient cloud infrastructure. We help you migrate, manage, and maintain your cloud environment.',
+          image: '../assets/images/home/plots/cloud.webp',
+        },
+        {
+          location: 'IT Consulting',
+          description:
+            'Gain expert insights into the latest technology trends and optimize your IT strategies to align with your business goals.',
+          image: '../assets/images/home/plots/consulting.webp',
+        },
+        {
+          location: 'Managed IT Services',
+          description:
+            'Focus on your core business while we handle your IT operations with proactive monitoring, support, and maintenance.',
+          image: '../assets/images/home/plots/managedIt.webp',
+        },
+      ],
+    },
+  },
+  {
+    name: 'media',
+    details: {
+      about: {
+        title: 'Create Impact with Media Solutions',
+        description:
+          'RAV Group helps businesses amplify their brand presence with creative and impactful media strategies. Our services include digital marketing, content creation, and advertising campaigns tailored to engage target audiences effectively. With a team of creative experts and data-driven approaches, we ensure that your media investments yield measurable results and drive meaningful connections with customers.',
+        image: '../assets/images/home/plots/media.webp',
+      },
+      benefits: [
+        'Creative content strategies to engage and captivate your audience',
+        'Expert digital marketing services for maximum online visibility',
+        'High-impact advertising campaigns tailored to target audiences',
+        'Over 10 years of experience in media and brand management',
+        'Flexible plans: campaign-based or long-term collaborations',
+      ],
+      plot: [
+        {
+          location: 'Digital Marketing',
+          description:
+            'Boost your online presence with SEO, social media marketing, and pay-per-click campaigns designed for measurable results.',
+          image: '../assets/images/home/plots/digital-marketing.webp',
+        },
+        {
+          location: 'Content Creation',
+          description:
+            'Engage your audience with compelling content, including blogs, videos, and graphics, that reflect your brand identity.',
+          image: '../assets/images/home/plots/content-marketing.webp',
+        },
+        {
+          location: 'Advertising Campaigns',
+          description:
+            'Reach your target audience with tailored advertising campaigns that maximize ROI across digital and traditional platforms.',
+          image: '../assets/images/home/plots/ads.webp',
+        },
+        {
+          location: 'Brand Strategy',
+          description:
+            'Define your brand’s voice, identity, and positioning with our expert strategy services for long-term success.',
+          image: '../assets/images/home/plots/brand.webp',
+        },
+      ],
+    },
+  },
 ];
 
 const ServiceDetails = () => {

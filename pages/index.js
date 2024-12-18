@@ -1,5 +1,6 @@
 import BlogSection from '@/src/components/BlogSection';
 import Counter from '@/src/components/Counter';
+import JourneySlider from '@/src/components/JourneySlider';
 import ProssessBar from '@/src/components/ProssessBar';
 import Testimonial from '@/src/components/Testimonial';
 import Layout from '@/src/layout/Layout';
@@ -140,14 +141,13 @@ const Index = () => {
                   </Link>
                 </div>
                 <div className="slider-contact-box">
-                  <a className="contact-icon" href="tel:+983217690326">
+                  <a className="contact-icon" href="tel:+918800933935">
                     <img src="assets/images/slider/call.png" alt="call icon" />
                   </a>
                   <div className="contact-number">
                     <span> Reach Out Today </span>
                     <h3>
-                      <a href="tel:+918800933935">+91 8800933935</a> <br />
-                      <a href="tel:+917503500871">+91 7503500871</a>{' '}
+                      <a href="tel:+918800933935">+91 8800933935</a>
                     </h3>
                   </div>
                 </div>
@@ -1003,6 +1003,15 @@ const Index = () => {
       {/* Start consen Testimonial Area */}
       {/*==================================================*/}
       <div className="testimonial-area">
+        <div className="mb-5 journey-container">
+          <div className=" white journey-header">
+            <h2> Our Journey </h2>
+          </div>
+
+          <JourneySlider />
+          <div className="journey-space"></div>
+        </div>
+
         <Testimonial />
       </div>
       {/*==================================================*/}
