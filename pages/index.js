@@ -1003,7 +1003,7 @@ const Index = () => {
       {/* Start consen Testimonial Area */}
       {/*==================================================*/}
       <div className="testimonial-area">
-        <div className="mb-5 journey-container">
+        <div className="mb-5 journey-container container ">
           <div className=" white journey-header">
             <h2> Our Journey </h2>
           </div>

@@ -218,19 +218,6 @@ display: flex;
 justify-content: space-around;
 }
 
-/* .journey-swiper .swiper-pagination .swiper-pagination-bullet::before{
- content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    margin: auto;
-  }
-    } */
 
     .journey-swiper .swiper-pagination-bullet {
       position: relative;

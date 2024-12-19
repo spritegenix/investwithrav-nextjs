@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 
 import Image from 'next/image';
 import useIsMobile from './useIsMobile';
@@ -75,6 +75,10 @@ export default function JourneySlider() {
         slidesPerView={1}
         spaceBetween={10}
         loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         centeredSlides={true}
         pagination={!isMobile ? pagination : false}
         navigation={{
@@ -95,7 +99,7 @@ export default function JourneySlider() {
             spaceBetween: 10,
           },
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="mySwiper journey-swiper"
       >
