@@ -48,7 +48,7 @@ const Footer1 = () => {
         </div>
         <div className="footer-bg">
           <div className="row">
-            <div className="col-lg-5 col-sm-6">
+            <div className="col-lg-4 col-sm-6">
               <div className="widget widgets-company-info mb-4 mb-lg-0">
                 <div className="company-info-desc pr-2">
                   <h4 className="widget-title">About Us</h4>
@@ -76,7 +76,7 @@ const Footer1 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-2 col-6">
               <div className="widget widget-nav-menu">
                 <h4 className="widget-title">Quick Links</h4>
                 <div className="menu-quick-link-content">
@@ -108,7 +108,7 @@ const Footer1 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-6">
+            <div className="col-lg-3 col-6">
               <div className="widget widget-nav-menu">
                 <h4 className="widget-title">Services</h4>
                 <div className="menu-quick-link-content">
@@ -143,49 +143,54 @@ const Footer1 = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-lg-3 col-sm-6">
+            <div className="col-lg-3 col-sm-6">
               <div id="em-recent-post-widget" className="mt-5 mt-sm-0">
                 <div className="single-widget-item">
                   <h4 className="widget-title">Popular Posts</h4>
                   <div className="recent-post-item active">
+                    {}
                     <div className="recent-post-image">
-                      <a href="#">
+                      <a href="/blog/5-things-that-take-a-room-from-good-to-great">
                         <img
                           width={80}
                           height={80}
-                          src="assets/images/resource/footer1.png"
+                          src="../assets/images/home/blog/blog-01.webp"
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="recent-post-text">
                       <h6>
-                        <a href="#">How To Plugin Install WP server?</a>
+                        <a href="/blog/5-things-that-take-a-room-from-good-to-great">
+                          5 THINGS THAT TAKE A ROOM FROM GOOD TO G...
+                        </a>
                       </h6>
-                      <span className="rcomment">Dec 12, 2023</span>
+                      <span className="rcomment">December 14, 2024</span>
                     </div>
                   </div>
                   <div className="recent-post-item">
                     <div className="recent-post-image">
-                      <a href="#">
+                      <a href="/blog/functional-and-stylish-wall-to-wall-shelves">
                         <img
                           width={80}
                           height={80}
-                          src="assets/images/resource/footer2.png"
+                          src="../assets/images/home/blog/blog-02.webp"
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="recent-post-text">
                       <h6>
-                        <a href="#">Top 10 Most Useful Google Extensions</a>
+                        <a href="/blog/functional-and-stylish-wall-to-wall-shelves">
+                          FUNCTIONAL AND STYLISH WALL-TO-WALL SHEL...
+                        </a>
                       </h6>
-                      <span className="rcomment">Dec 15, 2023</span>
+                      <span className="rcomment">November 14, 2024</span>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="foorer-shape">
             <div className="footer-thumb">
@@ -221,7 +226,7 @@ const Footer1 = () => {
                 <div className="footer-bottom-content-copy">
                   <p>
                     © 2024 <span>RAV Group</span> All rights reserved. Designed
-                    and developed by{' '}
+                    and Developed by{' '}
                     <a href="https://www.spritegenix.com/" target="_blank">
                       <span>SpriteGenix</span>
                     </a>

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-bg">
           <div className="row">
-            <div className="col-lg-6 col-sm-6">
+            <div className="col-lg-4 col-sm-6">
               <div className="widget widgets-company-info mb-4 mb-lg-0">
                 <div className="company-info-desc pr-2">
                   <h4 className="widget-title">Why Choose RAV Group?</h4>
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-2 col-6">
               <div className="widget widget-nav-menu">
                 <h4 className="widget-title">Quick Links</h4>
                 <div className="menu-quick-link-content">
@@ -50,6 +50,11 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link legacyBehavior href="/blog-grid">
+                        Blogs
+                      </Link>
+                    </li>
+                    <li>
                       <Link legacyBehavior href="/contact">
                         Contact Us
                       </Link>
@@ -59,11 +64,6 @@ const Footer = () => {
                         Services
                       </Link>
                     </li> */}
-                    <li>
-                      <Link legacyBehavior href="blog-grid">
-                        Blogs
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -99,43 +99,54 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* <div className="col-lg-3 col-sm-6">
-              <div className="single-widget-item">
-                <h4 className="widget-title pb-2">Popular Posts</h4>
-                <div className="contact-form-footer">
-                  <form onSubmit={(e) => e.preventDefault()}>
-                    <div className="subscribe_form">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        className="form-control"
-                        required=""
-                        placeholder="Enter E-Mail"
-                      />
-                      <button type="submit" className="btn">
-                        <i className="bi bi-send-check" />
-                      </button>
+            <div className="col-lg-3 col-sm-6">
+              <div id="em-recent-post-widget" className="mt-5 mt-sm-0">
+                <div className="single-widget-item">
+                  <h4 className="widget-title">Popular Posts</h4>
+                  <div className="recent-post-item active">
+                    {}
+                    <div className="recent-post-image">
+                      <a href="/blog/5-things-that-take-a-room-from-good-to-great">
+                        <img
+                          width={80}
+                          height={80}
+                          src="../assets/images/home/blog/blog-01.webp"
+                          alt=""
+                        />
+                      </a>
                     </div>
-                  </form>
-                </div>
-                <div className="recent-post-item">
-                  <div className="recent-post-thumb1">
-                    <a href="#">
-                      <img
-                        src="assets/images/resource/google-play.png"
-                        alt=""
-                      />
-                    </a>
+                    <div className="recent-post-text">
+                      <h6>
+                        <a href="/blog/5-things-that-take-a-room-from-good-to-great">
+                          5 THINGS THAT TAKE A ROOM FROM GOOD TO G...
+                        </a>
+                      </h6>
+                      <span className="rcomment">December 14, 2024</span>
+                    </div>
                   </div>
-                  <div className="recent-post-thumb">
-                    <a href="#">
-                      <img src="assets/images/resource/app-store.png" alt="" />
-                    </a>
+                  <div className="recent-post-item">
+                    <div className="recent-post-image">
+                      <a href="/blog/functional-and-stylish-wall-to-wall-shelves">
+                        <img
+                          width={80}
+                          height={80}
+                          src="../assets/images/home/blog/blog-02.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div className="recent-post-text">
+                      <h6>
+                        <a href="/blog/functional-and-stylish-wall-to-wall-shelves">
+                          FUNCTIONAL AND STYLISH WALL-TO-WALL SHEL...
+                        </a>
+                      </h6>
+                      <span className="rcomment">November 14, 2024</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <div className="foorer-shape">
@@ -173,7 +184,7 @@ const Footer = () => {
                   <div className="footer-bottom-content-copy">
                     <p>
                       © 2024 <span>RAV Group</span> All rights reserved.
-                      Designed by{' '}
+                      Designed and Developed by{' '}
                       <a href="https://www.spritegenix.com/" target="_blank">
                         <span>SpriteGenix</span>
                       </a>

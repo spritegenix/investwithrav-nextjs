@@ -3,6 +3,9 @@ import { useRouter } from 'next/router';
 import React from 'react';
 
 const BlogSection = ({ articles, heading }) => {
+  const router = useRouter();
+  const displayedArticles =
+    router.pathname === '/' ? articles.slice(0, 3) : articles;
   return (
     <div className="container">
       {!heading && (
@@ -34,7 +37,7 @@ const BlogSection = ({ articles, heading }) => {
       )}
 
       <div className={`row ${heading ? 'pt-5' : ''}`}>
-        {articles.map((item) => (
+        {displayedArticles.map((item) => (
           <div className="col-lg-4 col-md-6">
             <div className="single-blog-box">
               <div className="single-blog-thumb">

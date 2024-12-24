@@ -38,6 +38,7 @@ export const articles = [
     title: '5 THINGS THAT TAKE A ROOM FROM GOOD TO GREAT',
     href: '/blog/5-things-that-take-a-room-from-good-to-great',
     image: '../assets/images/home/blog/blog-01.webp',
+    tags: ['Interior Design', 'Room Styling', 'Home Improvement', 'Decor Tips'],
   },
   {
     id: 2,
@@ -45,6 +46,12 @@ export const articles = [
     title: 'FUNCTIONAL AND STYLISH WALL-TO-WALL SHELVES',
     href: '/blog/functional-and-stylish-wall-to-wall-shelves',
     image: '../assets/images/home/blog/blog-02.webp',
+    tags: [
+      'Storage Solutions',
+      'Wall Design',
+      'Stylish Shelving',
+      'Functional Design',
+    ],
   },
   {
     id: 3,
@@ -52,6 +59,46 @@ export const articles = [
     title: 'THE 5 SECRETS TO PULLING OFF SIMPLE, MINIMAL DESIGN',
     href: '/blog/the-5-secrets-to-pulling-off-simple-minimal-design',
     image: '../assets/images/home/blog/blog-03.webp',
+    tags: ['Minimalism', 'Simple Design', 'Modern Aesthetics', 'Design Tips'],
+  },
+  {
+    id: 4,
+    date: 'December 20, 2024',
+    title: 'DESIGN TIPS FOR MODERN LIVING',
+    href: '/blog/design-tips-for-modern-living',
+    image: '../assets/images/home/blog/blog-04.jpeg',
+    tags: [
+      'Modern Living',
+      'Interior Design',
+      'Contemporary Decor',
+      'Lifestyle Tips',
+    ],
+  },
+  {
+    id: 5,
+    date: 'December 18, 2024',
+    title: 'FUNCTIONAL SPACES FOR BUSY LIFESTYLES',
+    href: '/blog/functional-spaces-for-busy-lifestyles',
+    image: '../assets/images/home/blog/blog-05.jpeg',
+    tags: [
+      'Functional Design',
+      'Efficiency',
+      'Productivity',
+      'Lifestyle Design',
+    ],
+  },
+  {
+    id: 6,
+    date: 'December 15, 2024',
+    title: 'MAXIMIZING SMALL SPACES WITH STYLE',
+    href: '/blog/maximizing-small-spaces-with-style',
+    image: '../assets/images/home/blog/blog-06.jpeg',
+    tags: [
+      'Small Spaces',
+      'Space Optimization',
+      'Stylish Living',
+      'Creative Solutions',
+    ],
   },
 ];
 

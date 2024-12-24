@@ -2,7 +2,7 @@ import Breadcumb from '@/src/components/Breadcumb';
 import { useRouter } from 'next/router';
 import Layout from '@/src/layout/Layout';
 import Link from 'next/link';
-const servicesData = [
+export const servicesData = [
   {
     name: 'business-consulting',
     details: {
@@ -289,6 +289,41 @@ const servicesData = [
     },
   },
 ];
+export async function getStaticProps({ params }) {
+  const { id } = params;
+
+  // Fetch the data for each service (replace with actual data fetching logic)
+
+  const service = servicesData.map((service) => service.name === id) || null;
+
+  if (!service) {
+    return { notFound: true }; // Return a 404 page if the service is not found
+  }
+
+  return {
+    props: { service }, // Pass the service data as props to the component
+  };
+}
+
+export async function getStaticPaths() {
+  const services = [
+    { id: 'business-consulting' },
+    { id: 'organic-farming' },
+    { id: 'river-castle' },
+    { id: 'investment' },
+    { id: 'information-technology' },
+    { id: 'media' },
+  ];
+
+  const paths = services.map((service) => ({
+    params: { id: service.id },
+  }));
+
+  return {
+    paths,
+    fallback: false, // This ensures only the paths specified will be generated during build time
+  };
+}
 
 const ServiceDetails = () => {
   const router = useRouter();
@@ -384,42 +419,47 @@ const ServiceDetails = () => {
 
             {/* Sidebar */}
             <div className="col-lg-4 col-md-12 ">
-              <div className="side-cat-fixed">
-                <div className="widget-categories-box">
-                  <div className="categories-title">
-                    <h4>Category</h4>
-                  </div>
-                  <div className="widget-categories-menu">
-                    <ul>
-                      {servicesData.map((item, index) => (
-                        <li key={index}>
-                          <Link
-                            legacyBehavior
-                            href={`/services/${item.name
-                              .toLowerCase()
-                              .replace(/\s+/g, '-')}`}
-                          >
-                            <a>
-                              {item.name.charAt(0).toUpperCase() +
-                                item.name.slice(1)}
-                            </a>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <div className="mt-5">
-                  <div className="service-details-content ">
-                    <div className="service-page-title2">
-                      <h1>What You Benefit</h1>
+              <div
+                className="relative"
+                style={{ position: 'relative', height: '100%' }}
+              >
+                <div className="side-cat-fixed">
+                  <div className="widget-categories-box">
+                    <div className="categories-title">
+                      <h4>Category</h4>
                     </div>
-                    <div className="widget-service-details-icon">
-                      {service.details.benefits.map((benefit, index) => (
-                        <p key={index} className="d-flex gap-2">
-                          <i className="bi bi-check-lg" /> <p>{benefit}</p>
-                        </p>
-                      ))}
+                    <div className="widget-categories-menu">
+                      <ul>
+                        {servicesData.map((item, index) => (
+                          <li key={index}>
+                            <Link
+                              legacyBehavior
+                              href={`/services/${item.name
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}`}
+                            >
+                              <a>
+                                {item.name.charAt(0).toUpperCase() +
+                                  item.name.slice(1)}
+                              </a>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="mt-5">
+                    <div className="service-details-content ">
+                      <div className="service-page-title2">
+                        <h1>What You Benefit</h1>
+                      </div>
+                      <div className="widget-service-details-icon">
+                        {service.details.benefits.map((benefit, index) => (
+                          <p key={index} className="d-flex gap-2">
+                            <i className="bi bi-check-lg" /> <p>{benefit}</p>
+                          </p>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
