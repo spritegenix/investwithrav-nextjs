@@ -34,18 +34,21 @@ const sponsors = [
 export const articles = [
   {
     id: 1,
+    date: 'December 14, 2024',
     title: '5 THINGS THAT TAKE A ROOM FROM GOOD TO GREAT',
     href: '/blog/5-things-that-take-a-room-from-good-to-great',
     image: '../assets/images/home/blog/blog-01.webp',
   },
   {
     id: 2,
+    date: 'November 14, 2024',
     title: 'FUNCTIONAL AND STYLISH WALL-TO-WALL SHELVES',
     href: '/blog/functional-and-stylish-wall-to-wall-shelves',
     image: '../assets/images/home/blog/blog-02.webp',
   },
   {
     id: 3,
+    date: 'November 01, 2024',
     title: 'THE 5 SECRETS TO PULLING OFF SIMPLE, MINIMAL DESIGN',
     href: '/blog/the-5-secrets-to-pulling-off-simple-minimal-design',
     image: '../assets/images/home/blog/blog-03.webp',
@@ -806,7 +809,7 @@ const Index = () => {
                         Gathering{' '}
                         <span> Information with Government Reasearch</span>
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         Understanding exact policy of government and utilize
                         unawared policy with proper master plan and ready for
                         action.
@@ -823,7 +826,7 @@ const Index = () => {
                       <h3>
                         Professional <span> Advisors </span>
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         Expert guidance to recognize and navigate your
                         challenges and uncover opportunities like - Short term
                         investment, rental, legacy, vision investment,
@@ -843,7 +846,7 @@ const Index = () => {
                       <h3>
                         Analyze <span> Your Actual Need </span>
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         Transform challenges into actionable strategies for
                         meaningful growth.
                       </p>
@@ -859,7 +862,7 @@ const Index = () => {
                       <h3>
                         Achieve <span> Excellence </span>
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         Delivering transparent, value-driven results that exceed
                         expectations.
                       </p>
@@ -890,7 +893,7 @@ const Index = () => {
                 <h4>
                   Why Choose <span> RAV Group </span>?
                 </h4>
-                <p>
+                <p className="text-center">
                   At RAV Group, we don’t just see challenges; we see
                   opportunities to create something extraordinary. We are driven
                   by a passion to deliver not just results, but meaningful
@@ -1009,7 +1012,7 @@ const Index = () => {
           </div>
 
           <JourneySlider />
-          <div className="journey-space"></div>
+          {/* <div className="journey-space"></div> */}
         </div>
 
         <Testimonial />

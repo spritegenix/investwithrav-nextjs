@@ -208,83 +208,93 @@ border-radius: 3rem !important;
 }
 
 
+/* ----------------------Journey Slider Start----------------------- */
+
 .journey-swiper{
 overflow: visible !important;
-}
+.swiper-pagination{
+  top: -70px !important;
+  display: flex;
+  justify-content: space-around;
+  }
+.swiper-pagination-bullet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #ffff; /* Adjust text color as needed */
+    opacity: 0.9;
+  }
+.swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width:10px; /* Adjust line length */
+    height: 10px; /* Adjust line thickness */
+    background-color: #ccc; /* Adjust line color */
+   border-radius: 50%; 
 
-.journey-swiper .swiper-pagination{
-top: -70px !important;
-display: flex;
-justify-content: space-around;
-}
-
-
-    .journey-swiper .swiper-pagination-bullet {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px; /* Adjust font size as needed */
-      font-weight: bold;
-      color: #ffff; /* Adjust text color as needed */
-      opacity: 0.9;
-    }
-    
-    .journey-swiper .swiper-pagination-bullet::before {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      width:10px; /* Adjust line length */
-      height: 10px; /* Adjust line thickness */
-      background-color: #ccc; /* Adjust line color */
-     border-radius: 50%; 
-
-    }
-
-    .journey-swiper .swiper-pagination-bullet:hover {
+  }
+  .swiper-pagination-bullet:hover {
      
-      color: #34bd6b;
-      font-size: 20px;
-    }
-
-    
-    .journey-swiper .swiper-pagination-bullet-active {
+    color: #34bd6b;
+    font-size: 20px;
+  }
+  .swiper-pagination-bullet-active {
      
-      color: #34bd6b;
-      width: 0;
-      height: 0;
-      border-radius: 0;
-      font-size: 20px;
+    color: #34bd6b;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    font-size: 20px;
+  }
+  .swiper-pagination-bullet-active::before{
+    content: ''!important;
+    position: absolute;
+    bottom: -20px !important;
+    width:10px; /* Adjust line length */
+    height: 10px; /* Adjust line thickness */
+    background-color: #34bd6b; /* Adjust line color */
+   border-radius: 50%;
+  }
+  .active-slide-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .active-slide-description p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #34bd6b;
+    margin-top: 10px;
+    
+  }
+  .swiper-wrapper{
+    z-index: 100 !important;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    z-index: 1000 !important;
+    color: #ffff !important;
+    top: var(--swiper-navigation-top-offset, 33%) !important;
     }
     
-    .journey-swiper .swiper-pagination-bullet-active::before{
-      content: ''!important;
+    .swiper-pagination::before{
+      border-bottom: 1px solid #fff;
+      content: "";
+      opacity: 54%;
       position: absolute;
-      bottom: -20px !important;
-      width:10px; /* Adjust line length */
-      height: 10px; /* Adjust line thickness */
-      background-color: #34bd6b; /* Adjust line color */
-     border-radius: 50%;
+      width: 100%;
+      left: 0;
+      right: 0;
+     top:36px;
     }
-
-    .active-slide-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-    }
-    
-    .active-slide-description p {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #34bd6b;
-      margin-top: 10px;
-      
-    }
-    .swiper-wrapper{
-      z-index: 100 !important;
-    }
+}
+ 
 @media screen and (min-width: 769px) {
   
   .journey-header{
@@ -316,20 +326,7 @@ justify-content: space-around;
   background-color: #ffff;
 }
 
-.swiper-button-next, .swiper-button-prev{
-z-index: 1000 !important;
-color: #ffff !important;
-top: var(--swiper-navigation-top-offset, 33%) !important;
-}
 
-.swiper-pagination::before{
-  border-bottom: 1px solid #fff;
 
-  content: "";
-  opacity: 54%;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
- top:36px;
-}
+
+/* ----------------------Journey Slider End----------------------- */

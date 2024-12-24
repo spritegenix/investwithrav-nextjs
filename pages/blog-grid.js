@@ -25,7 +25,7 @@ const BlogGrid = () => {
   }, [active]);
   return (
     <Layout>
-      <Breadcumb pageName={'Blog Grid'} />
+      <Breadcumb pageName={'Blogs'} />
       <BlogSection articles={articles} heading={heading} />
     </Layout>
   );

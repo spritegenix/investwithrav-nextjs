@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { BsTwitterX } from 'react-icons/bs';
 const Footer1 = () => {
   return (
     <div className="footer-middle">
@@ -68,7 +68,7 @@ const Footer1 = () => {
                     <i className="bi bi-instagram" />
                   </a>
                   <a className="social-icon-color1" href="#">
-                    <i className="bi bi-twitter" />
+                    <BsTwitterX />
                   </a>
                   <a className="social-icon-color3" href="#">
                     <i className="bi bi-youtube" />
@@ -87,11 +87,11 @@ const Footer1 = () => {
                     <li>
                       <a href="/about">About Us</a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/service">Services</a>
-                    </li>
+                    </li> */}
                     <li>
-                      <a href="blog-grid">Blog</a>
+                      <a href="blog-grid">Blogs</a>
                     </li>
                     <li>
                       <a href="/contact">Contact Us</a>
@@ -191,12 +191,16 @@ const Footer1 = () => {
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-md-4">
-              <div className="consen-logo">
+              <div
+                className="consen-logo "
+                style={{ width: '13rem', margin: '0 auto' }}
+              >
                 <Link legacyBehavior href="/">
                   <a className="logo_thumb" title="RAV Group">
                     <img
                       src="../assets/images/home/logo2.png"
                       alt="RAV Group Logo"
+                      style={{ width: '100%', height: '100%' }}
                     />
                   </a>
                 </Link>
@@ -207,7 +211,7 @@ const Footer1 = () => {
                 <div className="footer-bottom-content-copy">
                   <p>
                     © 2024 <span>RAV Group</span> All rights reserved. Designed
-                    by{' '}
+                    and developed by{' '}
                     <a href="https://www.spritegenix.com/" target="_blank">
                       <span>SpriteGenix</span>
                     </a>

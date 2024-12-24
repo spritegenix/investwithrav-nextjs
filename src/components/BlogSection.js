@@ -45,7 +45,7 @@ const BlogSection = ({ articles, heading }) => {
               </div>
               <div className="em-blog-content">
                 <div className="meta-blog-text">
-                  <p> August 25, 2023 </p>
+                  <p>{item.date}</p>
                 </div>
                 <div className="em-blog-title">
                   <h2>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { BsTwitterX } from 'react-icons/bs';
 const Footer = () => {
   return (
     <div className="footer-middle style-two">
@@ -25,7 +25,7 @@ const Footer = () => {
                     <i className="bi bi-instagram" />
                   </a>
                   <a className="social-icon-color1" href="#">
-                    <i className="bi bi-twitter" />
+                    <BsTwitterX />
                   </a>
                   <a className="social-icon-color3" href="#">
                     <i className="bi bi-youtube" />
@@ -54,10 +54,13 @@ const Footer = () => {
                         Contact Us
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link legacyBehavior href="/service">
-                        Service
+                        Services
                       </Link>
+                    </li> */}
+                    <li>
+                      <a href="blog-grid">Blogs</a>
                     </li>
                   </ul>
                 </div>
@@ -79,6 +82,9 @@ const Footer = () => {
                     </li>
                     <li>
                       <a href="/services/river-castle">The River Castle</a>
+                    </li>
+                    <li>
+                      <Link href="/services/investment">Investment</Link>
                     </li>
                   </ul>
                 </div>
@@ -138,12 +144,16 @@ const Footer = () => {
           <div className="container">
             <div className="row d-flex align-items-center">
               <div className="col-md-4">
-                <div className="consen-logo">
+                <div
+                  className="consen-logo "
+                  style={{ width: '13rem', margin: '0 auto' }}
+                >
                   <Link legacyBehavior href="/">
                     <a className="logo_thumb" title="RAV Group">
                       <img
                         src="../assets/images/home/logo2.png"
                         alt="RAV Group Logo"
+                        style={{ width: '100%', height: '100%' }}
                       />
                     </a>
                   </Link>
