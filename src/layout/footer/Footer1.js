@@ -82,19 +82,27 @@ const Footer1 = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <a href="/">Home</a>
+                      <Link legacyBehavior href="/">
+                        Home
+                      </Link>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
+                      <Link legacyBehavior href="/about">
+                        About Us
+                      </Link>
                     </li>
                     {/* <li>
-                      <a href="/service">Services</a>
+                      <Link legacyBehavior href="/service">Services</Link>
                     </li> */}
                     <li>
-                      <a href="blog-grid">Blogs</a>
+                      <Link legacyBehavior href="/blog-grid">
+                        Blogs
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <Link legacyBehavior href="/contact">
+                        Contact Us
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -106,28 +114,30 @@ const Footer1 = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <Link href="/services/business-consulting">
+                      <Link legacyBehavior href="/services/business-consulting">
                         Business Consulting
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/organic-farming">
+                      <Link legacyBehavior href="/services/organic-farming">
                         Organic Farming
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/river-castle">
+                      <Link legacyBehavior href="/services/river-castle">
                         The River Castle
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/investment">Investment</Link>
+                      <Link legacyBehavior href="/services/investment">
+                        Investment
+                      </Link>
                     </li>
                     {/* <li>
-                      <a href="#">Corporate Finance</a>
+                      <Link legacyBehavior href="#">Corporate Finance</Link>
                     </li>
                     <li>
-                      <a href="#">Market Research</a>
+                      <Link legacyBehavior href="#">Market Research</Link>
                     </li> */}
                   </ul>
                 </div>

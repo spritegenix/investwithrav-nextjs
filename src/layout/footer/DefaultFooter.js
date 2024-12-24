@@ -60,7 +60,9 @@ const Footer = () => {
                       </Link>
                     </li> */}
                     <li>
-                      <a href="blog-grid">Blogs</a>
+                      <Link legacyBehavior href="blog-grid">
+                        Blogs
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -73,18 +75,24 @@ const Footer = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <a href="/services/business-consulting">
+                      <Link legacyBehavior href="/services/business-consulting">
                         Business Consulting
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/organic-farming">Organic Farming</a>
+                      <Link legacyBehavior href="/services/organic-farming">
+                        Organic Farming
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/river-castle">The River Castle</a>
+                      <Link legacyBehavior href="/services/river-castle">
+                        The River Castle
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/services/investment">Investment</Link>
+                      <Link legacyBehavior href="/services/investment">
+                        Investment
+                      </Link>
                     </li>
                   </ul>
                 </div>

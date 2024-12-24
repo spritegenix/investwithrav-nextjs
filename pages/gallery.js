@@ -3,6 +3,7 @@ import Layout from '@/src/layout/Layout';
 
 const Gallery = () => {
   const galleryImages = [
+    '../assets/images/home/gallery/01.jpeg',
     '../assets/images/home/gallery/01.jpg',
     '../assets/images/home/gallery/02.jpg',
     '../assets/images/home/gallery/03.jpg',

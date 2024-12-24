@@ -3015,7 +3015,7 @@ p.choose-text1 {
   transition: 0.5s;
   z-index: -1;
   border-radius: 3px;
-  background: url(../assets/images/resource/box-bg4.png);
+  background: url(../images/resource/box-bg4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
