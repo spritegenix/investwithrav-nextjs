@@ -207,7 +207,7 @@ const servicesData = [
         title: 'Innovate with IT Solutions',
         description:
           'RAV Group specializes in delivering state-of-the-art IT services designed to empower businesses. Our offerings include software development, IT consulting, and infrastructure management, helping clients streamline operations and achieve growth. With a focus on security, scalability, and efficiency, we provide solutions tailored to meet specific industry requirements. From startups to enterprises, our expertise ensures the best results in the rapidly evolving tech landscape.',
-        image: '../assets/images/home/plots/it.webp',
+        image: '../assets/images/home/plots/It.webp',
       },
       benefits: [
         'Custom software solutions to address unique business needs',
@@ -383,59 +383,44 @@ const ServiceDetails = () => {
             </div>
 
             {/* Sidebar */}
-            <div className="col-lg-4 col-md-12">
-              {/* <div className="widget_search mt-5 mt-lg-0">
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  action="#"
-                  method="get"
-                >
-                  <input
-                    type="text"
-                    name="s"
-                    placeholder="Search Here"
-                    title="Search for:"
-                  />
-                  <button type="submit" className="icons">
-                    <i className="fa fa-search" />
-                  </button>
-                </form>
-              </div> */}
-              <div className="widget-categories-box">
-                <div className="categories-title">
-                  <h4>Category</h4>
-                </div>
-                <div className="widget-categories-menu">
-                  <ul>
-                    {servicesData.map((item, index) => (
-                      <li key={index}>
-                        <Link
-                          legacyBehavior
-                          href={`/services/${item.name
-                            .toLowerCase()
-                            .replace(/\s+/g, '-')}`}
-                        >
-                          <a>
-                            {item.name.charAt(0).toUpperCase() +
-                              item.name.slice(1)}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-5">
-                <div className="service-details-content">
-                  <div className="service-page-title2">
-                    <h1>What You Benefit</h1>
+            <div className="col-lg-4 col-md-12 ">
+              <div className="side-cat-fixed">
+                <div className="widget-categories-box">
+                  <div className="categories-title">
+                    <h4>Category</h4>
                   </div>
-                  <div className="widget-service-details-icon">
-                    {service.details.benefits.map((benefit, index) => (
-                      <p key={index}>
-                        <i className="bi bi-check-lg" /> <span>{benefit}</span>
-                      </p>
-                    ))}
+                  <div className="widget-categories-menu">
+                    <ul>
+                      {servicesData.map((item, index) => (
+                        <li key={index}>
+                          <Link
+                            legacyBehavior
+                            href={`/services/${item.name
+                              .toLowerCase()
+                              .replace(/\s+/g, '-')}`}
+                          >
+                            <a>
+                              {item.name.charAt(0).toUpperCase() +
+                                item.name.slice(1)}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-5">
+                  <div className="service-details-content ">
+                    <div className="service-page-title2">
+                      <h1>What You Benefit</h1>
+                    </div>
+                    <div className="widget-service-details-icon">
+                      {service.details.benefits.map((benefit, index) => (
+                        <p key={index} className="d-flex gap-2">
+                          <i className="bi bi-check-lg" /> <p>{benefit}</p>
+                        </p>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
