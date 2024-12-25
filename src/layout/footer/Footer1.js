@@ -82,11 +82,6 @@ const Footer1 = () => {
                 <div className="menu-quick-link-content">
                   <ul className="footer-menu">
                     <li>
-                      <Link legacyBehavior href="/">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
                       <Link legacyBehavior href="/about">
                         About Us
                       </Link>
@@ -97,6 +92,11 @@ const Footer1 = () => {
                     <li>
                       <Link legacyBehavior href="/blog-grid">
                         Blogs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link legacyBehavior href="/gallery">
+                        Gallery
                       </Link>
                     </li>
                     <li>
@@ -133,12 +133,19 @@ const Footer1 = () => {
                         Investment
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link legacyBehavior href="#">Corporate Finance</Link>
+                    <li>
+                      <Link
+                        legacyBehavior
+                        href="/services/information-technology"
+                      >
+                        Information Technology
+                      </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="#">Market Research</Link>
-                    </li> */}
+                      <Link legacyBehavior href="/services/media">
+                        Media
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>

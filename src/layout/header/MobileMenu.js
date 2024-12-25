@@ -217,6 +217,11 @@ const MobileMenu = () => {
                   {activeBtn('Portfolio')}
                 </a> */}
               </li>
+              <li>
+                <Link legacyBehavior href="/gallery">
+                  Gallery
+                </Link>
+              </li>
               <li className="mean-last">
                 <Link legacyBehavior href="/contact">
                   Contact
